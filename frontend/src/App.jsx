@@ -11,6 +11,7 @@ import Error from "./components/Error";
 import Home from "./pages/Home";
 import Applications from "./pages/Applications";
 import ApplyJob from "./pages/ApplyJob";
+import { SearchProvider } from "./context/searchContext";
 
 function App() {
   const router = createBrowserRouter([
@@ -30,8 +31,10 @@ function App() {
   ]);
   return (
     <>
-      <ToastContainer limit={2} hideProgressBar />
-      <RouterProvider router={router} />
+      <SearchProvider>
+        <ToastContainer limit={2} hideProgressBar />
+        <RouterProvider router={router} />
+      </SearchProvider>
     </>
   );
 }

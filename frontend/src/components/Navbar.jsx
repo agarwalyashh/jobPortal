@@ -30,7 +30,7 @@ import logo from "../assets/logo.svg";
            <Link to="/applications">Applied Jobs</Link>
            <p> | </p>
            <div className="flex items-center gap-2">
-             <p className="">
+             <p className="hidden sm:block">
                Welcome, <span className="capitalize">{user.firstName}</span>
              </p>
              <UserButton />
