@@ -20,7 +20,7 @@ function Sidebar() {
             <div className="flex gap-4 items-center mt-2">
               {searchFilter.searchJob && (
                 <div className="relative">
-                  <h1 className="bg-blue-200 border-blue-500 border-1 py-2 px-6 rounded-sm text-sm md:text-[16px]">
+                  <h1 className="bg-blue-200 border-blue-500 border-1 py-1 md:py-2 px-4 md:px-6 rounded-sm text-sm md:text-[16px]">
                     {searchFilter.searchJob}
                   </h1>
                   <X
@@ -33,7 +33,7 @@ function Sidebar() {
               )}
               {searchFilter.searchLocation && (
                 <div className="relative">
-                  <h1 className="bg-pink-200 border-pink-500 border-1 py-2 px-6 rounded-sm text-sm md:text-[16px]">
+                  <h1 className="bg-pink-200 border-pink-500 border-1 py-1 md:py-2 px-4 md:px-6 rounded-sm text-sm md:text-[16px]">
                     {searchFilter.searchLocation}
                   </h1>
                   <X
@@ -51,7 +51,7 @@ function Sidebar() {
         <Filters />
       </div>
       <button
-        className="border-[0.5px] px-4 py-2 rounded-sm cursor-pointer focus:outline-none font-medium sm:hidden text-xs"
+        className="border-[0.5px] px-4 py-2 rounded-sm cursor-pointer focus:outline-none font-medium sm:hidden text-xs my-2"
         onClick={() => setFilters(!filters)}
       >
         {filters ? "Hide Filters" : "Show Filters"}
