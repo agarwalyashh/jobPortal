@@ -1,4 +1,6 @@
+import {useNavigate} from "react-router-dom"
 function JobCard({temp}) {
+  const navigate = useNavigate()
   return (
     <div className="border-1 border-slate-200 shadow-md rounded-sm p-4 w-75 md:w-85 h-fit md:h-80 space-y-2 my-2 relative">
       <img src={temp.companyId.image} alt="companyLogo" />
@@ -13,10 +15,10 @@ function JobCard({temp}) {
       </div>
       <p className="text-xs sm:text-sm">{temp.about.substring(0,200)+" ..."}</p>
       <div className="flex gap-2 items-center md:absolute bottom-6">
-        <button className="text-white bg-blue-500 px-2 md:px-4 lg:px-6 py-1 md:py-2 rounded-sm cursor-pointer hover:bg-blue-600 text-xs sm:text-sm lg:text-[16px]">
+        <button onClick={()=>navigate(`/apply-job/${temp._id}`)} className="text-white bg-blue-500 px-2 md:px-4 lg:px-6 py-1 md:py-2 rounded-sm cursor-pointer hover:bg-blue-600 text-xs sm:text-sm lg:text-[16px]">
           Apply Now
         </button>
-        <button className="bg-slate-200 px-2 md:px-4 lg:px-6 py-1 md:py-2 rounded-sm cursor-pointer hover:bg-slate-300 text-xs sm:text-sm lg:text-[16px]">
+        <button onClick={()=>navigate(`/apply-job/${temp._id}`)} className="bg-slate-200 px-2 md:px-4 lg:px-6 py-1 md:py-2 rounded-sm cursor-pointer hover:bg-slate-300 text-xs sm:text-sm lg:text-[16px]">
           Learn More
         </button>
       </div>

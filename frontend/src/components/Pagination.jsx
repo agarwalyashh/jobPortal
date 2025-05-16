@@ -1,10 +1,8 @@
 import { useSearchParams } from "react-router-dom";
-import { jobsData } from "../helper";
-
-const totalJobs = jobsData.length;
-const PAGE_SIZE = 6;
-const totalPages = Math.ceil(totalJobs / PAGE_SIZE);
-function Pagination() {
+function Pagination({ data }) {
+  const totalJobs = data.length;
+  const PAGE_SIZE = 6;
+  const totalPages = Math.ceil(totalJobs / PAGE_SIZE);
   const [searchParams, setSearchParams] = useSearchParams();
   const page = Number(searchParams.get("page")) || 1;
   function handlePrevious() {
@@ -25,7 +23,7 @@ function Pagination() {
         Previous
       </button>
       <button
-        disabled={page == totalPages}
+        disabled={page >= totalPages}
         onClick={handleNext}
         className="px-2 sm:px-4 sm:py-2 py-1 rounded-sm text-white bg-slate-500 disabled:cursor-not-allowed cursor-pointer hover:bg-slate-600"
       >

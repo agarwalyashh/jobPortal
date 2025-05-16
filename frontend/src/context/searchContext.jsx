@@ -6,10 +6,14 @@ function SearchProvider({ children }) {
     searchJob: "",
     searchLocation: "",
   });
+  const [sidebarFilter,setSidebarFilter] = useState({
+    selectedCategories:[],
+    selectedLocations:[]
+  });
   const [isSearched, setIsSearched] = useState(false);
   return (
     <SearchContext.Provider
-      value={{ searchFilter, setSearchFilter, isSearched, setIsSearched }}
+      value={{ searchFilter, setSearchFilter, isSearched, setIsSearched,sidebarFilter,setSidebarFilter }}
     >
       {children}
     </SearchContext.Provider>

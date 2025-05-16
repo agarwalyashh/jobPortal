@@ -5,7 +5,6 @@ import logo from "../assets/logo.svg";
  function Navbar() {
    const { openSignIn } = useClerk();
    const { user } = useUser();
-   console.log(user);
  
    return (
      <div className="flex justify-between items-center">

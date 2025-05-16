@@ -13,24 +13,23 @@ export const jobsData = [
     },
     about:
       "We are seeking a highly skilled Full Stack Developer to join our dynamic and innovative team. The ideal candidate will have a passion for developing scalable web applications and working across the entire technology stack, including front-end and back-end development. You will have the opportunity to work with the latest technologies and contribute to exciting projects that impact our users directly.",
-    description: `
-        <p>We are seeking a highly skilled Full Stack Developer to join our dynamic and innovative team. The ideal candidate will have a passion for developing scalable web applications and working across the entire technology stack, including front-end and back-end development. You will have the opportunity to work with the latest technologies and contribute to exciting projects that impact our users directly.</p>
-        <h2><strong>Key Responsibilities</strong></h2>
-        <ol>
-            <li>Build, test, and deploy highly responsive web applications.</li>
-            <li>Design user-friendly interfaces using HTML, CSS, and JavaScript.</li>
-            <li>Develop and maintain APIs and databases to support application functionality.</li>
-            <li>Collaborate with cross-functional teams to define, design, and ship new features.</li>
-            <li>Identify and resolve bottlenecks and bugs to optimize application performance.</li>
-        </ol>
-        <h2><strong>Skills Required</strong></h2>
-        <ol>
-            <li>Proficiency in HTML, CSS, and JavaScript frameworks (e.g., React, Angular).</li>
-            <li>Experience with server-side languages (e.g., Node.js, Python).</li>
-            <li>Familiarity with relational and non-relational databases (e.g., MySQL, MongoDB).</li>
-            <li>Strong understanding of web security and performance optimization.</li>
-            <li>Ability to work in an Agile environment.</li>
-        </ol>`,
+    description: "We are seeking a highly skilled Full Stack Developer to join our dynamic and innovative team. The ideal candidate will have a passion for developing scalable web applications and working across the entire technology stack, including front-end and back-end development. You will have the opportunity to work with the latest technologies and contribute to exciting projects that impact our users directly",
+    otherDetails: {
+      keyResponsibilities: [
+        "Build, test, and deploy highly responsive web applications.",
+        "Design user-friendly interfaces using HTML, CSS, and JavaScript.",
+        "Develop and maintain APIs and databases to support application functionality.",
+        "Collaborate with cross-functional teams to define, design, and ship new features.",
+        "Identify and resolve bottlenecks and bugs to optimize application performance.",
+      ],
+      skillsRequired: [
+        "Proficiency in HTML, CSS, and JavaScript frameworks (e.g., React, Angular).",
+        "Experience with server-side languages (e.g., Node.js, Python).",
+        "Familiarity with relational and non-relational databases (e.g., MySQL, MongoDB).",
+        "Strong understanding of web security and performance optimization.",
+        "Ability to work in an Agile environment.",
+      ],
+    },
     salary: 82000,
     date: 1729681667114,
     category: "Programming",
@@ -48,24 +47,23 @@ export const jobsData = [
     },
     about:
       "Join our analytics team to help drive business decisions using data. As a Data Scientist, you will leverage your analytical skills to uncover patterns and insights that will influence our strategic direction. You will work closely with stakeholders to understand their needs and deliver impactful analyses that support our growth objectives. Your role is critical in turning data into actionable insights.",
-    description: `
-    <p>Join our analytics team to help drive business decisions using data. As a Data Scientist, you will leverage your analytical skills to uncover patterns and insights that will influence our strategic direction. You will work closely with stakeholders to understand their needs and deliver impactful analyses that support our growth objectives. Your role is critical in turning data into actionable insights.</p>
-    <h2><strong>Key Responsibilities</strong></h2>
-    <ol>
-        <li>Analyze large datasets to uncover trends and patterns that inform business strategies.</li>
-        <li>Develop predictive models to forecast outcomes and improve decision-making.</li>
-        <li>Visualize data findings through reports and dashboards for stakeholders.</li>
-        <li>Collaborate with cross-functional teams to define data-driven goals.</li>
-        <li>Continuously refine data collection and analysis processes to enhance accuracy.</li>
-    </ol>
-    <h2><strong>Skills Required</strong></h2>
-    <ol>
-        <li>Proficiency in Python or R for statistical analysis and data manipulation.</li>
-        <li>Experience with data visualization tools (e.g., Tableau, Power BI).</li>
-        <li>Strong knowledge of SQL and database management.</li>
-        <li>Familiarity with machine learning techniques and algorithms.</li>
-        <li>Excellent problem-solving and critical-thinking skills.</li>
-    </ol>`,
+    description: "Join our analytics team to help drive business decisions using data. As a Data Scientist, you will leverage your analytical skills to uncover patterns and insights that will influence our strategic direction. You will work closely with stakeholders to understand their needs and deliver impactful analyses that support our growth objectives. Your role is critical in turning data into actionable insights.",
+    otherDetails: {
+      keyResponsibilities: [
+        "Analyze large datasets to uncover trends and patterns that inform business strategies.",
+        "Develop predictive models to forecast outcomes and improve decision-making.",
+        "Visualize data findings through reports and dashboards for stakeholders.",
+        "Collaborate with cross-functional teams to define data-driven goals.",
+        "Continuously refine data collection and analysis processes to enhance accuracy.",
+      ],
+      skillsRequired: [
+        "Proficiency in Python or R for statistical analysis and data manipulation.",
+        "Experience with data visualization tools (e.g., Tableau, Power BI).",
+        "Strong knowledge of SQL and database management.",
+        "Familiarity with machine learning techniques and algorithms.",
+        "Excellent problem-solving and critical-thinking skills.",
+      ],
+    },
     salary: 72000,
     date: 1729681667114,
     category: "Data Science",
@@ -83,24 +81,23 @@ export const jobsData = [
     },
     about:
       "Create intuitive digital experiences as a UI/UX Designer. In this role, you will collaborate with product teams to design engaging user interfaces and ensure a seamless user journey. Your creativity and attention to detail will be crucial in developing designs that not only look good but also enhance functionality and user satisfaction.",
-    description: `
-        <p>Create intuitive digital experiences as a UI/UX Designer. In this role, you will collaborate with product teams to design engaging user interfaces and ensure a seamless user journey. Your creativity and attention to detail will be crucial in developing designs that not only look good but also enhance functionality and user satisfaction.</p>
-        <h2><strong>Key Responsibilities</strong></h2>
-        <ol>
-            <li>Conduct user research and usability testing to gather insights on user needs.</li>
-            <li>Create wireframes, prototypes, and high-fidelity designs that communicate user flows.</li>
-            <li>Collaborate with development teams to implement designs effectively.</li>
-            <li>Stay updated with industry trends and best practices in UI/UX design.</li>
-            <li>Gather and analyze user feedback to iterate and improve designs.</li>
-        </ol>
-        <h2><strong>Skills Required</strong></h2>
-        <ol>
-            <li>Proficiency in design tools like Figma, Sketch, or Adobe XD.</li>
-            <li>Strong understanding of user-centered design principles.</li>
-            <li>Basic knowledge of HTML/CSS for better collaboration with developers.</li>
-            <li>Excellent communication and teamwork skills.</li>
-            <li>Creative problem-solving abilities.</li>
-        </ol>`,
+    description: "Create intuitive digital experiences as a UI/UX Designer. In this role, you will collaborate with product teams to design engaging user interfaces and ensure a seamless user journey. Your creativity and attention to detail will be crucial in developing designs that not only look good but also enhance functionality and user satisfaction.",
+    otherDetails: {
+      keyResponsibilities: [
+        "Conduct user research and usability testing to gather insights on user needs.",
+        "Create wireframes, prototypes, and high-fidelity designs that communicate user flows.",
+        "Collaborate with development teams to implement designs effectively.",
+        "Stay updated with industry trends and best practices in UI/UX design.",
+        "Gather and analyze user feedback to iterate and improve designs.",
+      ],
+      skillsRequired: [
+        "Proficiency in design tools like Figma, Sketch, or Adobe XD.",
+        "Strong understanding of user-centered design principles.",
+        "Basic knowledge of HTML/CSS for better collaboration with developers.",
+        "Excellent communication and teamwork skills.",
+        "Creative problem-solving abilities.",
+      ],
+    },
     salary: 61000,
     date: 1729681667114,
     category: "Designing",
@@ -118,24 +115,22 @@ export const jobsData = [
     },
     about:
       "Enhance our deployment pipeline as a DevOps Engineer. This role will involve automating deployment processes, managing cloud infrastructure, and implementing best practices for security and performance. You will play a vital role in bridging the gap between development and operations, ensuring efficient workflows and high-quality releases.",
-    description: `
-        <p>Enhance our deployment pipeline as a DevOps Engineer. This role will involve automating deployment processes, managing cloud infrastructure, and implementing best practices for security and performance. You will play a vital role in bridging the gap between development and operations, ensuring efficient workflows and high-quality releases.</p>
-        <h2><strong>Key Responsibilities</strong></h2>
-        <ol>
-            <li>Automate deployment processes using CI/CD tools to streamline development workflows.</li>
-            <li>Manage cloud infrastructure, ensuring optimal performance and scalability.</li>
-            <li>Implement security best practices to safeguard our systems.</li>
-            <li>Monitor application performance and troubleshoot issues proactively.</li>
-            <li>Collaborate with developers to improve system reliability and efficiency.</li>
-        </ol>
-        <h2><strong>Skills Required</strong></h2>
-        <ol>
-            <li>Experience with CI/CD tools (e.g., Jenkins, GitLab CI).</li>
-            <li>Strong knowledge of cloud platforms (e.g., AWS, Azure).</li>
-            <li>Proficiency in scripting languages (e.g., Bash, Python).</li>
-            <li>Familiarity with containerization technologies (e.g., Docker, Kubernetes).</li>
-            <li>Excellent troubleshooting and analytical skills.</li>
-        </ol>`,
+    description: "Enhance our deployment pipeline as a DevOps Engineer. This role will involve automating deployment processes, managing cloud infrastructure, and implementing best practices for security and performance. You will play a vital role in bridging the gap between development and operations, ensuring efficient workflows and high-quality releases.",
+    otherDetails: {
+      keyResponsibilities: [
+        "Automate deployment processes using CI/CD tools to streamline development workflows.",
+        "Manage cloud infrastructure, ensuring optimal performance and scalability.",
+        "Implement security best practices to safeguard our systems.",
+        "Monitor application performance and troubleshoot issues proactively.",
+        "Collaborate with developers to improve system reliability and efficiency.",
+      ],
+      skillsRequired: [
+        "Experience with CI/CD tools (e.g., Jenkins, GitLab CI).",
+        "Strong knowledge of cloud platforms (e.g., AWS, Azure).",
+        "Proficiency in scripting languages (e.g., Bash, Python).",
+        "Familiarity with containerization technologies (e.g., Docker, Kubernetes).",
+        "Excellent troubleshooting and analytical skills.",
+      ]},
     salary: 53000,
     date: 1729681667114,
     category: "Programming",
@@ -153,24 +148,22 @@ export const jobsData = [
     },
     about:
       "Join our team as a Software Engineer to build high-quality applications that deliver exceptional user experiences. You will be responsible for designing, developing, and maintaining software solutions that meet business needs. Collaborating closely with other engineers, you will contribute to code reviews and ensure best practices are followed throughout the development process.",
-    description: `
-        <p>Join our team as a Software Engineer to build high-quality applications that deliver exceptional user experiences. You will be responsible for designing, developing, and maintaining software solutions that meet business needs. Collaborating closely with other engineers, you will contribute to code reviews and ensure best practices are followed throughout the development process.</p>
-        <h2><strong>Key Responsibilities</strong></h2>
-        <ol>
-            <li>Develop and maintain software applications that fulfill user requirements.</li>
-            <li>Collaborate with cross-functional teams to design scalable and efficient solutions.</li>
-            <li>Participate in code reviews to ensure code quality and maintainability.</li>
-            <li>Conduct testing and debugging to improve application functionality.</li>
-            <li>Document development processes and application designs.</li>
-        </ol>
-        <h2><strong>Skills Required</strong></h2>
-        <ol>
-            <li>Proficient in Java or C# with a solid understanding of object-oriented programming.</li>
-            <li>Experience with Agile methodologies and software development life cycle.</li>
-            <li>Strong problem-solving skills and attention to detail.</li>
-            <li>Familiarity with version control systems (e.g., Git).</li>
-            <li>Excellent communication and teamwork abilities.</li>
-        </ol>`,
+    description: "Join our team as a Software Engineer to build high-quality applications that deliver exceptional user experiences. You will be responsible for designing, developing, and maintaining software solutions that meet business needs. Collaborating closely with other engineers, you will contribute to code reviews and ensure best practices are followed throughout the development process.",
+    otherDetails: { 
+      keyResponsibilities: [
+        "Design, develop, and maintain software applications that meet user requirements.",
+        "Collaborate with cross-functional teams to design scalable and efficient solutions.",
+        "Participate in code reviews to ensure code quality and maintainability.",
+        "Conduct testing and debugging to improve application functionality.",
+        "Document development processes and application designs.",
+      ],
+      skillsRequired: [
+        "Proficient in Java or C# with a solid understanding of object-oriented programming.",
+        "Experience with Agile methodologies and software development life cycle.",
+        "Strong problem-solving skills and attention to detail.",
+        "Familiarity with version control systems (e.g., Git).",
+        "Excellent communication and teamwork abilities.",
+      ]},
     salary: 91000,
     date: 1729681667114,
     category: "Programming",
@@ -188,24 +181,22 @@ export const jobsData = [
     },
     about:
       "We are looking for a Network Engineer to manage our infrastructure and ensure robust connectivity across all systems. Your expertise will help us design and implement network solutions that are secure and efficient. You will be pivotal in monitoring network performance and ensuring compliance with security standards.",
-    description: `
-        <p>We are looking for a Network Engineer to manage our infrastructure and ensure robust connectivity across all systems. Your expertise will help us design and implement network solutions that are secure and efficient. You will be pivotal in monitoring network performance and ensuring compliance with security standards.</p>
-        <h2><strong>Key Responsibilities</strong></h2>
-        <ol>
-            <li>Design and implement network solutions that meet organizational needs.</li>
-            <li>Monitor network performance and troubleshoot issues to ensure uptime.</li>
-            <li>Ensure security compliance by implementing best practices.</li>
-            <li>Document network configurations and maintain updated records.</li>
-            <li>Collaborate with IT teams to enhance network capabilities.</li>
-        </ol>
-        <h2><strong>Skills Required</strong></h2>
-        <ol>
-            <li>Proficiency in network protocols and routing (e.g., TCP/IP, BGP, OSPF).</li>
-            <li>Experience with firewalls, VPNs, and security technologies.</li>
-            <li>Strong troubleshooting skills and attention to detail.</li>
-            <li>Excellent communication and teamwork abilities.</li>
-            <li>Relevant certifications (e.g., CCNA, CCNP) are a plus.</li>
-        </ol>`,
+    description:"We are looking for a Network Engineer to manage our infrastructure and ensure robust connectivity across all systems. Your expertise will help us design and implement network solutions that are secure and efficient. You will be pivotal in monitoring network performance and ensuring compliance with security standards.",
+    otherDetails: {
+      keyResponsibilities: [
+        "Design and implement network solutions that meet organizational needs.",
+        "Monitor network performance and troubleshoot issues to ensure uptime.",
+        "Ensure security compliance by implementing best practices.",
+        "Document network configurations and maintain updated records.",
+        "Collaborate with IT teams to enhance network capabilities.",
+      ],
+      skillsRequired: [
+        "Proficiency in network protocols and routing (e.g., TCP/IP, BGP, OSPF).",
+        "Experience with firewalls, VPNs, and security technologies.",
+        "Strong troubleshooting skills and attention to detail.",
+        "Excellent communication and teamwork abilities.",
+        "Relevant certifications (e.g., CCNA, CCNP) are a plus.",
+      ]},
     salary: 77000,
     date: 1729681667114,
     category: "Networking",
@@ -223,24 +214,22 @@ export const jobsData = [
     },
     about:
       "Lead projects as a Project Manager ensuring timely delivery and alignment with organizational goals. You will oversee project planning, execution, and monitoring, collaborating with various teams to ensure that all aspects of each project are delivered successfully. Your strong leadership skills will be key to motivating team members and fostering a positive work environment.",
-    description: `
-    <p>Lead projects as a Project Manager ensuring timely delivery and alignment with organizational goals. You will oversee project planning, execution, and monitoring, collaborating with various teams to ensure that all aspects of each project are delivered successfully. Your strong leadership skills will be key to motivating team members and fostering a positive work environment.</p>
-    <h2><strong>Key Responsibilities</strong></h2>
-    <ol>
-        <li>Define project scope, objectives, and deliverables in collaboration with stakeholders.</li>
-        <li>Develop detailed project plans and schedules to guide execution.</li>
-        <li>Monitor project progress and adjust plans as necessary to meet deadlines.</li>
-        <li>Facilitate communication between teams and manage stakeholder expectations.</li>
-        <li>Conduct project retrospectives to identify lessons learned and areas for improvement.</li>
-    </ol>
-    <h2><strong>Skills Required</strong></h2>
-    <ol>
-        <li>Proven experience as a Project Manager in a technology-focused environment.</li>
-        <li>Familiarity with project management software (e.g., JIRA, Trello).</li>
-        <li>Strong leadership and organizational skills.</li>
-        <li>Excellent communication and interpersonal abilities.</li>
-        <li>Certification in project management (e.g., PMP, Scrum Master) is preferred.</li>
-    </ol>`,
+    description: "Lead projects as a Project Manager ensuring timely delivery and alignment with organizational goals. You will oversee project planning, execution, and monitoring, collaborating with various teams to ensure that all aspects of each project are delivered successfully. Your strong leadership skills will be key to motivating team members and fostering a positive work environment.",
+    otherDetails: {
+    keyResponsibilities: [
+      "Define project scope, objectives, and deliverables in collaboration with stakeholders.",
+      "Develop detailed project plans and schedules to guide execution.",
+      "Monitor project progress and adjust plans as necessary to meet deadlines.",
+      "Facilitate communication between teams and manage stakeholder expectations.",
+      "Conduct project retrospectives to identify lessons learned and areas for improvement.",
+    ],
+    skillsRequired: [
+      "Proven experience as a Project Manager in a technology-focused environment.",
+      "Familiarity with project management software (e.g., JIRA, Trello).",
+      "Strong leadership and organizational skills.",
+      "Excellent communication and interpersonal abilities.",
+      "Certification in project management (e.g., PMP, Scrum Master) is preferred.",
+    ]},
     salary: 60000,
     date: 1729681667114,
     category: "Management",
@@ -258,24 +247,23 @@ export const jobsData = [
     },
     about:
       "Join our team as a Mobile App Developer to create engaging mobile applications for iOS and Android platforms. You will be responsible for the full app development lifecycle, from concept and design to deployment and maintenance. Your creativity and technical skills will help us deliver high-quality applications that enhance user experience.",
-    description: `
-      <p>Join our team as a Mobile App Developer to create engaging mobile applications for iOS and Android platforms. You will be responsible for the full app development lifecycle, from concept and design to deployment and maintenance. Your creativity and technical skills will help us deliver high-quality applications that enhance user experience.</p>
-      <h2><strong>Key Responsibilities</strong></h2>
-      <ol>
-          <li>Design and build advanced mobile applications for iOS and Android.</li>
-          <li>Collaborate with cross-functional teams to define, design, and ship new features.</li>
-          <li>Continuously discover, evaluate, and implement new technologies to maximize development efficiency.</li>
-          <li>Ensure performance, quality, and responsiveness of applications.</li>
-          <li>Conduct code reviews and maintain code quality standards.</li>
-      </ol>
-      <h2><strong>Skills Required</strong></h2>
-      <ol>
-          <li>Proficiency in Swift for iOS or Kotlin for Android development.</li>
-          <li>Experience with RESTful APIs and third-party libraries.</li>
-          <li>Strong understanding of mobile app design principles and guidelines.</li>
-          <li>Excellent problem-solving skills and attention to detail.</li>
-          <li>Familiarity with version control systems (e.g., Git).</li>
-      </ol>`,
+    description: "Join our team as a Mobile App Developer to create engaging mobile applications for iOS and Android platforms. You will be responsible for the full app development lifecycle, from concept and design to deployment and maintenance. Your creativity and technical skills will help us deliver high-quality applications that enhance user experience.",
+    otherDetails: {
+      keyResponsibilities: [
+        "Design and build advanced mobile applications for iOS and Android.",
+        "Collaborate with cross-functional teams to define, design, and ship new features.",
+        "Continuously discover, evaluate, and implement new technologies to maximize development efficiency.",
+        "Ensure performance, quality, and responsiveness of applications.",
+        "Conduct code reviews and maintain code quality standards.",
+      ],
+      skillsRequired: [
+        "Proficiency in Swift for iOS or Kotlin for Android development.",
+        "Experience with RESTful APIs and third-party libraries.",
+        "Strong understanding of mobile app design principles and guidelines.",
+        "Excellent problem-solving skills and attention to detail.",
+        "Familiarity with version control systems (e.g., Git).",
+      ],
+    },
     salary: 112000,
     date: 1729681667114,
     category: "Programming",
@@ -293,24 +281,23 @@ export const jobsData = [
     },
     about:
       "Design cloud solutions as a Cloud Architect, helping to transform our infrastructure and services. You will work closely with various teams to understand their requirements and translate them into secure, scalable, and efficient cloud-based solutions. Your expertise will guide our cloud strategy and ensure that we leverage cloud technologies to their fullest potential.",
-    description: `
-      <p>Design cloud solutions as a Cloud Architect, helping to transform our infrastructure and services. You will work closely with various teams to understand their requirements and translate them into secure, scalable, and efficient cloud-based solutions. Your expertise will guide our cloud strategy and ensure that we leverage cloud technologies to their fullest potential.</p>
-      <h2><strong>Key Responsibilities</strong></h2>
-      <ol>
-          <li>Design and implement cloud solutions that align with business objectives.</li>
-          <li>Provide guidance on best practices for cloud architecture and deployment.</li>
-          <li>Collaborate with DevOps teams to enhance cloud infrastructure and security.</li>
-          <li>Monitor cloud systems for performance and cost-effectiveness.</li>
-          <li>Stay updated on emerging cloud technologies and industry trends.</li>
-      </ol>
-      <h2><strong>Skills Required</strong></h2>
-      <ol>
-          <li>Strong knowledge of cloud service providers (e.g., AWS, Azure, GCP).</li>
-          <li>Experience with cloud architecture patterns and best practices.</li>
-          <li>Familiarity with containerization and orchestration technologies (e.g., Docker, Kubernetes).</li>
-          <li>Excellent analytical and problem-solving skills.</li>
-          <li>Relevant certifications (e.g., AWS Certified Solutions Architect) are preferred.</li>
-      </ol>`,
+    description:"Design cloud solutions as a Cloud Architect, helping to transform our infrastructure and services. You will work closely with various teams to understand their requirements and translate them into secure, scalable, and efficient cloud-based solutions. Your expertise will guide our cloud strategy and ensure that we leverage cloud technologies to their fullest potential.",
+    otherDetails: {
+      keyResponsibilities: [
+        "Design and implement cloud solutions that align with business objectives.",
+        "Provide guidance on best practices for cloud architecture and deployment.",
+        "Collaborate with DevOps teams to enhance cloud infrastructure and security.",
+        "Monitor cloud systems for performance and cost-effectiveness.",
+        "Stay updated on emerging cloud technologies and industry trends.",
+      ],
+      skillsRequired: [
+        "Strong knowledge of cloud service providers (e.g., AWS, Azure, GCP).",
+        "Experience with cloud architecture patterns and best practices.",
+        "Familiarity with containerization and orchestration technologies (e.g., Docker, Kubernetes).",
+        "Excellent analytical and problem-solving skills.",
+        "Relevant certifications (e.g., AWS Certified Solutions Architect) are preferred.",
+      ],
+    },
     salary: 96000,
     date: 1729681667114,
     category: "Programming",
@@ -328,24 +315,23 @@ export const jobsData = [
     },
     about:
       "Join us as a Technical Writer to create user-friendly documentation that supports our products and services. You will work closely with engineers and product managers to gather information and produce clear, concise, and accurate documentation. Your role is essential in ensuring that our users can easily understand and utilize our offerings.",
-    description: `
-      <p>Join us as a Technical Writer to create user-friendly documentation that supports our products and services. You will work closely with engineers and product managers to gather information and produce clear, concise, and accurate documentation. Your role is essential in ensuring that our users can easily understand and utilize our offerings.</p>
-      <h2><strong>Key Responsibilities</strong></h2>
-      <ol>
-          <li>Create and maintain user manuals, API documentation, and other technical materials.</li>
-          <li>Collaborate with development teams to gather and clarify technical information.</li>
-          <li>Conduct reviews of existing documentation to ensure accuracy and relevance.</li>
-          <li>Ensure that documentation is up-to-date and consistent with product updates.</li>
-          <li>Utilize feedback from users to enhance the clarity and usability of documentation.</li>
-      </ol>
-      <h2><strong>Skills Required</strong></h2>
-      <ol>
-          <li>Proficiency in technical writing and documentation tools (e.g., MadCap Flare, Adobe FrameMaker).</li>
-          <li>Strong understanding of technology and the ability to convey complex information clearly.</li>
-          <li>Excellent research and analytical skills.</li>
-          <li>Strong communication and collaboration abilities.</li>
-          <li>Attention to detail and a commitment to quality.</li>
-      </ol>`,
+    description: "Join us as a Technical Writer to create user-friendly documentation that supports our products and services. You will work closely with engineers and product managers to gather information and produce clear, concise, and accurate documentation. Your role is essential in ensuring that our users can easily understand and utilize our offerings.",
+    otherDetails: {
+      keyResponsibilities: [
+        "Create and maintain user manuals, API documentation, and other technical materials.",
+        "Collaborate with development teams to gather and clarify technical information.",
+        "Conduct reviews of existing documentation to ensure accuracy and relevance.",
+        "Ensure that documentation is up-to-date and consistent with product updates.",
+        "Utilize feedback from users to enhance the clarity and usability of documentation.",
+      ],
+      skillsRequired: [
+        "Proficiency in technical writing and documentation tools (e.g., MadCap Flare, Adobe FrameMaker).",
+        "Strong understanding of technology and the ability to convey complex information clearly.",
+        "Excellent research and analytical skills.",
+        "Strong communication and collaboration abilities.",
+        "Attention to detail and a commitment to quality.",
+      ],
+    },
     salary: 72000,
     date: 1729681667114,
     category: "Marketing",
@@ -363,24 +349,23 @@ export const jobsData = [
     },
     about:
       "Protect our systems as a Cybersecurity Analyst. In this role, you will monitor security systems, analyze potential threats, and implement protective measures to safeguard our information and assets. Your expertise will help us stay ahead of evolving security challenges and maintain a secure environment for our users and stakeholders.",
-    description: `
-      <p>Protect our systems as a Cybersecurity Analyst. In this role, you will monitor security systems, analyze potential threats, and implement protective measures to safeguard our information and assets. Your expertise will help us stay ahead of evolving security challenges and maintain a secure environment for our users and stakeholders.</p>
-      <h2><strong>Key Responsibilities</strong></h2>
-      <ol>
-          <li>Monitor and analyze security events to identify potential threats.</li>
-          <li>Conduct risk assessments and vulnerability analyses to enhance security posture.</li>
-          <li>Implement security measures and controls to mitigate risks.</li>
-          <li>Collaborate with IT teams to respond to security incidents.</li>
-          <li>Stay informed about the latest cybersecurity trends and threats.</li>
-      </ol>
-      <h2><strong>Skills Required</strong></h2>
-      <ol>
-          <li>Strong knowledge of security protocols, standards, and tools.</li>
-          <li>Experience with SIEM tools and incident response processes.</li>
-          <li>Understanding of network protocols and security technologies.</li>
-          <li>Excellent problem-solving and analytical skills.</li>
-          <li>Relevant certifications (e.g., CISSP, CEH) are a plus.</li>
-      </ol>`,
+    description:"Protect our systems as a Cybersecurity Analyst. In this role, you will monitor security systems, analyze potential threats, and implement protective measures to safeguard our information and assets. Your expertise will help us stay ahead of evolving security challenges and maintain a secure environment for our users and stakeholders.",
+    otherDetails: {
+      keyResponsibilities: [
+        "Monitor and analyze security events to identify potential threats.",
+        "Conduct risk assessments and vulnerability analyses to enhance security posture.",
+        "Implement security measures and controls to mitigate risks.",
+        "Collaborate with IT teams to respond to security incidents.",
+        "Stay informed about the latest cybersecurity trends and threats.",
+      ],
+      skillsRequired: [
+        "Strong knowledge of security protocols, standards, and tools.",
+        "Experience with SIEM tools and incident response processes.",
+        "Understanding of network protocols and security technologies.",
+        "Excellent problem-solving and analytical skills.",
+        "Relevant certifications (e.g., CISSP, CEH) are a plus.",
+      ],
+    },
     salary: 62000,
     date: 1729681667114,
     category: "Cybersecurity",
@@ -398,24 +383,23 @@ export const jobsData = [
     },
     about:
       "Join us as a Business Analyst to optimize our processes and improve overall efficiency. You will work closely with stakeholders to identify business needs and gather requirements for new projects. Your analytical skills will help drive decision-making and ensure that solutions align with business objectives.",
-    description: `
-      <p>Join us as a Business Analyst to optimize our processes and improve overall efficiency. You will work closely with stakeholders to identify business needs and gather requirements for new projects. Your analytical skills will help drive decision-making and ensure that solutions align with business objectives.</p>
-      <h2><strong>Key Responsibilities</strong></h2>
-      <ol>
-          <li>Gather and analyze business requirements from stakeholders.</li>
-          <li>Develop detailed documentation of business processes and workflows.</li>
-          <li>Collaborate with IT and development teams to translate requirements into solutions.</li>
-          <li>Conduct testing and validation of new systems and processes.</li>
-          <li>Provide ongoing support and training for users.</li>
-      </ol>
-      <h2><strong>Skills Required</strong></h2>
-      <ol>
-          <li>Strong analytical skills and attention to detail.</li>
-          <li>Proficiency in business analysis tools (e.g., Visio, JIRA).</li>
-          <li>Excellent communication and interpersonal abilities.</li>
-          <li>Experience with data analysis and reporting.</li>
-          <li>Familiarity with Agile methodologies is a plus.</li>
-      </ol>`,
+    description:"Join us as a Business Analyst to optimize our processes and improve overall efficiency. You will work closely with stakeholders to identify business needs and gather requirements for new projects. Your analytical skills will help drive decision-making and ensure that solutions align with business objectives.",
+    otherDetails: {
+      keyResponsibilities: [
+        "Gather and analyze business requirements from stakeholders.",
+        "Develop detailed documentation of business processes and workflows.",
+        "Collaborate with IT and development teams to translate requirements into solutions.",
+        "Conduct testing and validation of new systems and processes.",
+        "Provide ongoing support and training for users.",
+      ],
+      skillsRequired: [
+        "Strong analytical skills and attention to detail.",
+        "Proficiency in business analysis tools (e.g., Visio, JIRA).",
+        "Excellent communication and interpersonal abilities.",
+        "Experience with data analysis and reporting.",
+        "Familiarity with Agile methodologies is a plus.",
+      ],
+    },
     salary: 68000,
     date: 1729681667114,
     category: "Management",

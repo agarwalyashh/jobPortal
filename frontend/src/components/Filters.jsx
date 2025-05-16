@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
+import { useSearch } from "../context/SearchContext";
 function Filters() {
   const categories = [
     "Programming",
@@ -21,6 +22,7 @@ function Filters() {
     "Noida",
     "Ahemdabad",
   ];
+  const {setSidebarFilter} = useSearch()
   const [searchParams, setSearchParams] = useSearchParams();
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [selectedLocations, setSelectedLocations] = useState([]);
@@ -30,10 +32,15 @@ function Filters() {
       ? selectedCategories.filter((c) => c !== category)
       : [...selectedCategories, category];
 
-    setSelectedCategories(newCategories);
+    setSelectedCategories(()=>newCategories);
+    setSidebarFilter({
+      selectedCategories: newCategories,
+      selectedLocations: selectedLocations,
+    })
 
     const newParams = new URLSearchParams(searchParams);
     newParams.delete("category");
+    newParams.delete("page");
     newCategories.forEach((c) => newParams.append("category", c));
     setSearchParams(newParams);
   }
@@ -43,10 +50,15 @@ function Filters() {
       ? selectedLocations.filter((l) => l !== location)
       : [...selectedLocations, location];
 
-    setSelectedLocations(newLocations);
+    setSelectedLocations(()=>newLocations);
+    setSidebarFilter({
+      selectedCategories: selectedCategories,
+      selectedLocations: newLocations,
+    })
 
     const newParams = new URLSearchParams(searchParams);
     newParams.delete("location");
+    newParams.delete("page");
     newLocations.forEach((l) => newParams.append("location", l));
     setSearchParams(newParams);
   }
