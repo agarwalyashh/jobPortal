@@ -17,7 +17,7 @@ function Applications() {
         <Navbar />
       </nav>
       <section className="flex-grow">
-        <div className="flex gap-4 items-center">
+        <div className="flex gap-2 md:gap-4 items-center">
           <h1 className="font-medium text-sm sm:text-lg md:text-xl lg:text-2xl">
             Your Resume:
           </h1>
@@ -30,7 +30,7 @@ function Applications() {
           />
           <label
             htmlFor="resume"
-            className="bg-blue-600 cursor-pointer rounded-sm p-1 h-8"
+            className="bg-blue-600 cursor-pointer rounded-sm p-1 h-4 sm:h-6 md:h-8"
           >
             <span>
               <Upload className="text-white" />
@@ -40,7 +40,7 @@ function Applications() {
             <p className="underline text-xs sm:text-sm">{resume.name}</p>
           )}
         </div>
-        <h1 className="font-medium text-sm sm:text-lg md:text-xl lg:text-2xl my-8">
+        <h1 className="font-medium text-sm sm:text-lg md:text-xl lg:text-2xl my-5 md:my-8">
           Jobs Applied
         </h1>
         <div className="grid grid-cols-12 w-full sm:w-[90%] text-[8px] xs:text-[10px] sm:text-sm md:text-lg border-1 border-slate-500 font-medium">

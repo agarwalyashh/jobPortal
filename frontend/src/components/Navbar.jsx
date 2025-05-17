@@ -1,11 +1,14 @@
 import logo from "../assets/logo.svg";
  import { UserButton, useClerk, useUser } from "@clerk/clerk-react";
+import { useState } from "react";
  import { Link, useNavigate } from "react-router-dom";
+import Login from "./Login";
  
  function Navbar() {
    const { openSignIn } = useClerk();
    const { user } = useUser();
-   const navigate = useNavigate()
+   const navigate = useNavigate();
+   const [login,setLogin] = useState(false)
    return (
      <div className="flex justify-between items-center">
        <img
@@ -16,7 +19,8 @@ import logo from "../assets/logo.svg";
        />
        {!user && (
          <div className="flex gap-4 items-center justify-center text-xs sm:text-sm sm:text-[16px]">
-           <button className="cursor-pointer text-font">Recruiter Login</button>
+           <button className="cursor-pointer text-font" onClick={()=>setLogin(true)}>Recruiter Login</button>
+           {login && <Login setLogin={setLogin}/>}
            <button
              onClick={() => openSignIn()}
              className="bg-blue-600 rounded-full px-4 md:px-6 py-1 md:py-2 text-white cursor-pointer"
