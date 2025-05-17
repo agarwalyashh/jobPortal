@@ -30,7 +30,8 @@ function ApplyJob() {
       <nav className="my-4">
         <Navbar />
       </nav>
-      {job[0] && (
+      <section className="flex-grow">
+        {job[0] && (
         <>
           <div className="bg-blue-100 border-1 border-blue-400 rounded-sm p-4 sm:p-6 md:p-8 lg:p-10 my-5 md:my-8 space-y-2 md:space-y-3">
             <div className="md:flex items-center justify-between md:space-y-0 space-y-2">
@@ -104,6 +105,7 @@ function ApplyJob() {
           </button>
         </>
       )}
+      </section>
       <Footer />
     </div>
   );

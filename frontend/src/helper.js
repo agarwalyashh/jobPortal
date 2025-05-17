@@ -405,3 +405,46 @@ export const jobsData = [
     category: "Management",
   },
 ];
+
+export const jobsApplied = [
+    {
+        company: 'Amazon',
+        title: 'Full Stack Developer',
+        location: 'Bangalore',
+        date: '22 Aug, 2024',
+        status: 'Pending',
+        logo: companyIcon,
+    },
+    {
+        company: 'Meta',
+        title: 'Data Scientist',
+        location: 'San Francisco',
+        date: '22 Aug, 2024',
+        status: 'Rejected',
+        logo: companyIcon,
+    },
+    {
+        company: 'Google',
+        title: 'Marketing Manager',
+        location: 'London',
+        date: '25 Sep, 2024',
+        status: 'Accepted',
+        logo: companyIcon,
+    },
+    {
+        company: 'Qualcomm',
+        title: 'UI/UX Designer',
+        location: 'Dubai',
+        date: '15 Oct, 2024',
+        status: 'Pending',
+        logo: companyIcon,
+    },
+    {
+        company: 'Microsoft',
+        title: 'Full Stack Developer',
+        location: 'Hyderabad',
+        date: '25 Sep, 2024',
+        status: 'Accepted',
+        logo: companyIcon,
+    },
+];

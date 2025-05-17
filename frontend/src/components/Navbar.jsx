@@ -1,17 +1,18 @@
 import logo from "../assets/logo.svg";
  import { UserButton, useClerk, useUser } from "@clerk/clerk-react";
- import { Link } from "react-router-dom";
+ import { Link, useNavigate } from "react-router-dom";
  
  function Navbar() {
    const { openSignIn } = useClerk();
    const { user } = useUser();
- 
+   const navigate = useNavigate()
    return (
      <div className="flex justify-between items-center">
        <img
+         onClick={() => navigate("/")}
          src={logo}
          alt="logo"
-         className="md:h-12 md:w-50 sm:h-10 sm:w-40 h-8 w-32"
+         className="cursor-pointer md:h-12 md:w-50 sm:h-10 sm:w-40 h-8 w-32"
        />
        {!user && (
          <div className="flex gap-4 items-center justify-center text-xs sm:text-sm sm:text-[16px]">

@@ -3,6 +3,8 @@
      --color-font-light: #CBD5E1;
      --color-font: #64748B;
      --font-outfit: "Outfit", sans-serif;
+     --breakpoint-sm:580px;
+     --breakpoint-xs:450px;
  }
 
  .spinner{
