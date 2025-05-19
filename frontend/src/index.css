@@ -23,3 +23,8 @@
   animation: s3 1s infinite linear;
 }
 @keyframes s3 {to{transform: rotate(1turn)}}
+
+.active{
+        background-color: #EFF6FF;
+        border-right: 6px solid #3B82F6;
+}

@@ -23,7 +23,7 @@ function ApplyJob() {
     level,
     salary,
     description,
-    otherDetails,
+    // otherDetails,
   } = job[0] || {};
   return (
     <div className="w-[95%] sm:w-[90%] mx-auto font-outfit flex flex-col min-h-screen">
@@ -77,7 +77,7 @@ function ApplyJob() {
                 {description}
               </p>
             </div>
-            <div className="space-y-1 sm:space-y-2">
+            {/* <div className="space-y-1 sm:space-y-2">
               <h1 className="text-xl font-semibold">Key Responsibility</h1>
               <ol
                 type="1"
@@ -98,7 +98,7 @@ function ApplyJob() {
                   <li key={index}>{item}</li>
                 ))}
               </ol>
-            </div>
+            </div> */}
           </div>
           <button className="hidden md:block mt-4 mb-10 lg:w-34 text-white bg-blue-500 px-2 md:px-4 lg:px-6 py-1 md:py-2 rounded-sm cursor-pointer hover:bg-blue-600 text-xs sm:text-sm lg:text-[16px]">
             Apply Now

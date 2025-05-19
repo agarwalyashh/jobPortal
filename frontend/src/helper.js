@@ -448,3 +448,37 @@ export const jobsApplied = [
         logo: companyIcon,
     },
 ];
+export const manageJobsData = [
+    { _id: 1, title: "Full Stack Developer", date: 1729102298497, location: "Bangalore", applicants: 20 },
+    { _id: 2, title: "Data Scientist", date: 1729102298497, location: "San Francisco", applicants: 15 },
+    { _id: 3, title: "Marketing Manager", date: 1729102298497, location: "London", applicants: 2 },
+    { _id: 4, title: "UI/UX Designer", date: 1729102298497, location: "Dubai", applicants: 25 }
+];
+
+export const JobLocations = [
+    "Bangalore",
+    "Washington",
+    "Hyderabad",
+    "Mumbai",
+    "California",
+    "Chennai",
+    "New York"
+]
+export const JobCategories = [
+    "Programming",
+    "Data Science",
+    "Designing",
+    "Networking",
+    "Management",
+    "Marketing",
+    "Cybersecurity",
+]
+export const viewApplicationsPageData = [
+    { _id: 1, name: "Richard Sanford", jobTitle: "Full Stack Developer", location: "Bangalore", imgSrc: companyIcon },
+    { _id: 2, name: "Enrique Murphy", jobTitle: "Data Scientist", location: "San Francisco", imgSrc: companyIcon },
+    { _id: 3, name: "Alison Powell", jobTitle: "Marketing Manager", location: "London", imgSrc: companyIcon },
+    { _id: 4, name: "Richard Sanford", jobTitle: "UI/UX Designer", location: "Dubai", imgSrc: companyIcon },
+    { _id: 5, name: "Enrique Murphy", jobTitle: "Full Stack Developer", location: "Hyderabad", imgSrc: companyIcon },
+    { _id: 6, name: "Alison Powell", jobTitle: "Data Scientist", location: "New Delhi", imgSrc: companyIcon },
+    { _id: 7, name: "Richard Sanford", jobTitle: "Marketing Manager", location: "Chennai", imgSrc: companyIcon },
+];
