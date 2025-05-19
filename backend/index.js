@@ -3,12 +3,15 @@ const morgan = require("morgan");
 const cors = require("cors");
 const AppError = require("./utils/error");
 const errorController = require("./controllers/errorController");
+const { clerkWebHooks } = require("./controllers/webHooks");
 
 const app = express();
 
 if (process.env.NODE_ENV === "development") app.use(morgan("dev"));
 
 app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+
+app.post("/webhooks",clerkWebHooks)
 
 // app.all("*", (req, res, next) => {
 //   next(new AppError(`Can't find ${req.originalUrl} on this server`, 404)); 
