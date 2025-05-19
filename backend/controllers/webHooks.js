@@ -1,33 +1,36 @@
-const Webhook = require("svix");
+const {Webhook} = require("svix");
 const User = require("../models/userModel");
 const AppError = require("../utils/error");
 
 exports.clerkWebHooks = async (req, res, next) => {
   try {
+    const payload = req.body.toString(); 
+    const headers = {
+      "svix-id": req.headers["svix-id"],
+      "svix-timestamp": req.headers["svix-timestamp"],
+      "svix-signature": req.headers["svix-signature"],
+    };
+
     // Create an SVIX instance with Clerk Webhook secret
     const webHook = new Webhook(process.env.CLERK_WEBHOOK_SECRET);
-    console.log(webHook);
-    console.log(req.body);
-    // Verify Headers
 
+    // Verify Headers
+    let evt;
     try {
-        webHook.verifyHeader(JSON.stringify(req.body), {
-        "svix-id": req.headers["svix-id"],
-        "svix-timestamp": req.headers["svix-timestamp"],
-        "svix-signature": req.headers["svix-signature"],
-      });
+      evt = webHook.verify(payload, headers);
     } catch (err) {
+      console.error("Invalid webhook signature", err.message);
       return res.status(400).json({ error: "Invalid webhook signature" });
     }
 
     // Getting Data from req.body
-    const { data, type } = req.body;
+    const { data, type } = evt;
 
     // Switch case for different types of events
     switch (type) {
       case "user.created": {
-        const user = {
-          userId: data.id,
+        const user = { 
+          userID: data.id,
           email: data.email_addresses[0].email_address,
           name: data.first_name + " " + data.last_name,
           image: data.profile_image_url,

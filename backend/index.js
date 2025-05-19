@@ -11,7 +11,15 @@ if (process.env.NODE_ENV === "development") app.use(morgan("dev"));
 
 app.use(cors({ origin: "http://localhost:5173", credentials: true }));
 
-app.post("/webhooks",clerkWebHooks)
+app.use((req, res, next) => {
+  next();
+});
+
+app.post(
+  "/webhooks",
+  express.raw({ type: "application/json" }),
+  clerkWebHooks
+);
 
 // app.all("*", (req, res, next) => {
 //   next(new AppError(`Can't find ${req.originalUrl} on this server`, 404)); 
