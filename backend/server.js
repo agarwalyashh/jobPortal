@@ -1,35 +1,41 @@
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config({ path: "./config.env" });
+
+const { connectCloudinary } = require("./utils/cloudinary");
 const app = require("./index");
 
-
 process.on("uncaughtException", (err) => {
-  console.log("UNCAUGHT REJECTION! Shutting down...");
+  console.log("UNCAUGHT EXCEPTION! Shutting down...");
   console.log(err.name, err.message);
-    process.exit(1);
+  process.exit(1);
 });
 
-password = process.env.DATABASE_PASSWORD;
-DB = process.env.DATABASE.replace("<PASSWORD>", password);
-mongoose
-  .connect(DB)
-  .then((connection) => {
+const password = process.env.DATABASE_PASSWORD;
+const DB = process.env.DATABASE.replace("<PASSWORD>", password);
+
+const startServer = async () => {
+  try {
+    await connectCloudinary();
+    await mongoose.connect(DB);
     console.log("Connected to MongoDB");
-  })
-  .catch((error) => {
-    console.log("Error connecting to MongoDB", error.message);
-  });
 
-const port = process.env.PORT || 3000;
-const server=app.listen(port, () => {
-  console.log(`App running on port ${port}`);
-});
+    const port = process.env.PORT || 3000;
+    const server = app.listen(port, () => {
+      console.log(`App running on port ${port}`);
+    });
 
-process.on("unhandledRejection", (err) => {
-  console.log("UNHANDLED REJECTION! Shutting down...");
-  console.log(err.name, err.message);
-  server.close(() => {
+    process.on("unhandledRejection", (err) => {
+      console.log("UNHANDLED REJECTION! Shutting down...");
+      console.log(err.name, err.message);
+      server.close(() => {
+        process.exit(1);
+      });
+    });
+  } catch (err) {
+    console.log("Startup error:", err.message);
     process.exit(1);
-  });
-});
+  }
+};
+
+startServer();
