@@ -3,7 +3,9 @@ const userController = require("../controllers/userController");
 
 const router = express.Router();
 
-router.route("/getAppliedJobs").get(userController.getAppliedJobs);
-router.route("/createJobApplication/:jobId").post(userController.createJobApplication);
+router.route("/").get(userController.getUser)
+router.route("/jobs").get(userController.getAppliedJobs);
+router.route("/:jobId").post(userController.createJobApplication);
+router.route("/resume").patch(userController.uploadResume,userController.updateResume)
 
 module.exports = router;

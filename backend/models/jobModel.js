@@ -15,6 +15,14 @@ const jobSchema = new mongoose.Schema({
     required: [true, "Job description is required"],
     trim: true,
   },
+  keyResponsibilities:{
+    type:Array,
+    required:[true,"Please mention some responsibilities"]
+  },
+  skillsRequired:{
+    type:Array,
+    required:[true,"Skills are required"]
+  },
   category: {
     type: String,
     required: [true, "Job category is required"],
@@ -43,7 +51,22 @@ const jobSchema = new mongoose.Schema({
       "Pune",
       "Noida",
       "Kolkata",
+      "Ahemdabad",
+      "Jaipur",
+      "Chennai"
     ],
+  },
+  date: {
+    type: Date,
+    default: Date.now(),
+  },
+  level: {
+    type: String,
+    enum: {
+      values: ["Senior Level", "Beginner Level", "Intermediate Level"],
+      message: "Level must be Senior,Beginner or Intermediate",
+    },
+    required: [true, "Level is required"],
   },
   salary: {
     type: Number,
@@ -55,5 +78,10 @@ const jobSchema = new mongoose.Schema({
   },
 });
 
+jobSchema.pre("/^find/",function(next){
+  this.find({active:true})
+  next()
+})
+
 const Job = mongoose.model("Job", jobSchema);
-exports.Job = Job;
+module.exports = Job;

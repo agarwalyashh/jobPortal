@@ -5,11 +5,6 @@ const crypto = require("crypto")
 
 const companySchema = new mongoose.Schema(
   {
-    companyId: {
-      type: String,
-      default: Date.now().toString() + Math.random().toString(),
-      unique: true,
-    },
     name: {
       type: String,
       required: [true, "Company name is required"],
@@ -56,6 +51,14 @@ companySchema.pre("save",async function(next){
 
 companySchema.methods.correctPassword = async function(candidatePassword,userPassword){
     return await bcrypt.compare(candidatePassword,userPassword)
+}
+
+companySchema.methods.changedPasswordAfter = function(JWTTimestamp){
+    if(this.passwordChangedAt){
+        const changedTimeStamp = parseInt(this.passwordChangedAt.getTime()/1000,10);
+        return JWTTimestamp<changedTimeStamp
+    }
+    return false;
 }
 
 const Company = mongoose.model("Company", companySchema);

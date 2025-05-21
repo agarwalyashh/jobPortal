@@ -1,6 +1,7 @@
 const multer = require("multer");
 const AppError = require("../utils/error");
 const Application = require("../models/applicantionModel");
+const Company = require("../models/companyModel");
 
 const multerStorage = multer.diskStorage({});
 
@@ -9,8 +10,9 @@ exports.uploadCompanyLogo = upload.single("image");
 
 exports.getAllApplicants = async (req, res, next) => {
   try {
-    // figure out companyId
-    const applicants = await Application.find({ company: companyId }); // populate
+    const applicants = await Application.find({
+      company: req.company.companyId,
+    });
     res.status(200).json({
       status: "success",
       data: {
@@ -40,18 +42,14 @@ exports.updateApplicationStatus = async (req, res, next) => {
   }
 };
 
-exports.updateVisibility = async (req, res, next) => {
+
+exports.getCompany = async (req, res, next) => {
   try {
-    const { visibility } = req.body;
-    const application = await Application.findByIdAndUpdate(
-      req.params.id,
-      { active: visibility },
-      { new: true }
-    );
-    if (!application) return next(new AppError("Application Not Found", 404));
-    res.status(201).json({
+    const company = await Company.findById(req.company._id);
+    if (!company) return next(new AppError("No such company exists", 404));
+    res.status(200).json({
       status: "success",
-      data: application,
+      data: company,
     });
   } catch (err) {
     next(new AppError(err.message, 400, err));
