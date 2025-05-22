@@ -3,7 +3,7 @@ export const jobsData = [
   {
     _id: "1",
     title: "Full Stack Developer",
-    location: "California",
+    location: "Noida",
     level: "Senior Level",
     companyId: {
       _id: "670e4d25ca9fda8f1bf359b9",
@@ -11,25 +11,22 @@ export const jobsData = [
       email: "slack@demo.com",
       image: companyIcon,
     },
-    about:
-      "We are seeking a highly skilled Full Stack Developer to join our dynamic and innovative team. The ideal candidate will have a passion for developing scalable web applications and working across the entire technology stack, including front-end and back-end development. You will have the opportunity to work with the latest technologies and contribute to exciting projects that impact our users directly.",
-    description: "We are seeking a highly skilled Full Stack Developer to join our dynamic and innovative team. The ideal candidate will have a passion for developing scalable web applications and working across the entire technology stack, including front-end and back-end development. You will have the opportunity to work with the latest technologies and contribute to exciting projects that impact our users directly",
-    otherDetails: {
-      keyResponsibilities: [
-        "Build, test, and deploy highly responsive web applications.",
-        "Design user-friendly interfaces using HTML, CSS, and JavaScript.",
-        "Develop and maintain APIs and databases to support application functionality.",
-        "Collaborate with cross-functional teams to define, design, and ship new features.",
-        "Identify and resolve bottlenecks and bugs to optimize application performance.",
-      ],
-      skillsRequired: [
-        "Proficiency in HTML, CSS, and JavaScript frameworks (e.g., React, Angular).",
-        "Experience with server-side languages (e.g., Node.js, Python).",
-        "Familiarity with relational and non-relational databases (e.g., MySQL, MongoDB).",
-        "Strong understanding of web security and performance optimization.",
-        "Ability to work in an Agile environment.",
-      ],
-    },
+    description:
+      "We are seeking a highly skilled Full Stack Developer to join our dynamic and innovative team. The ideal candidate will have a passion for developing scalable web applications and working across the entire technology stack, including front-end and back-end development. You will have the opportunity to work with the latest technologies and contribute to exciting projects that impact our users directly",
+    keyResponsibilities: [
+      "Build, test, and deploy highly responsive web applications.",
+      "Design user-friendly interfaces using HTML, CSS, and JavaScript.",
+      "Develop and maintain APIs and databases to support application functionality.",
+      "Collaborate with cross-functional teams to define, design, and ship new features.",
+      "Identify and resolve bottlenecks and bugs to optimize application performance.",
+    ],
+    skillsRequired: [
+      "Proficiency in HTML, CSS, and JavaScript frameworks (e.g., React, Angular).",
+      "Experience with server-side languages (e.g., Node.js, Python).",
+      "Familiarity with relational and non-relational databases (e.g., MySQL, MongoDB).",
+      "Strong understanding of web security and performance optimization.",
+      "Ability to work in an Agile environment.",
+    ],
     salary: 82000,
     date: 1729681667114,
     category: "Programming",
@@ -37,7 +34,7 @@ export const jobsData = [
   {
     _id: "2",
     title: "Data Scientist",
-    location: "New York",
+    location: "Kolkata",
     level: "Intermediate Level",
     companyId: {
       _id: "670e4d25ca9fda8f1bf359b9",
@@ -45,25 +42,22 @@ export const jobsData = [
       email: "slack@demo.com",
       image: companyIcon,
     },
-    about:
+    description:
       "Join our analytics team to help drive business decisions using data. As a Data Scientist, you will leverage your analytical skills to uncover patterns and insights that will influence our strategic direction. You will work closely with stakeholders to understand their needs and deliver impactful analyses that support our growth objectives. Your role is critical in turning data into actionable insights.",
-    description: "Join our analytics team to help drive business decisions using data. As a Data Scientist, you will leverage your analytical skills to uncover patterns and insights that will influence our strategic direction. You will work closely with stakeholders to understand their needs and deliver impactful analyses that support our growth objectives. Your role is critical in turning data into actionable insights.",
-    otherDetails: {
-      keyResponsibilities: [
-        "Analyze large datasets to uncover trends and patterns that inform business strategies.",
-        "Develop predictive models to forecast outcomes and improve decision-making.",
-        "Visualize data findings through reports and dashboards for stakeholders.",
-        "Collaborate with cross-functional teams to define data-driven goals.",
-        "Continuously refine data collection and analysis processes to enhance accuracy.",
-      ],
-      skillsRequired: [
-        "Proficiency in Python or R for statistical analysis and data manipulation.",
-        "Experience with data visualization tools (e.g., Tableau, Power BI).",
-        "Strong knowledge of SQL and database management.",
-        "Familiarity with machine learning techniques and algorithms.",
-        "Excellent problem-solving and critical-thinking skills.",
-      ],
-    },
+    keyResponsibilities: [
+      "Analyze large datasets to uncover trends and patterns that inform business strategies.",
+      "Develop predictive models to forecast outcomes and improve decision-making.",
+      "Visualize data findings through reports and dashboards for stakeholders.",
+      "Collaborate with cross-functional teams to define data-driven goals.",
+      "Continuously refine data collection and analysis processes to enhance accuracy.",
+    ],
+    skillsRequired: [
+      "Proficiency in Python or R for statistical analysis and data manipulation.",
+      "Experience with data visualization tools (e.g., Tableau, Power BI).",
+      "Strong knowledge of SQL and database management.",
+      "Familiarity with machine learning techniques and algorithms.",
+      "Excellent problem-solving and critical-thinking skills.",
+    ],
     salary: 72000,
     date: 1729681667114,
     category: "Data Science",
@@ -79,25 +73,22 @@ export const jobsData = [
       email: "slack@demo.com",
       image: companyIcon,
     },
-    about:
+    description:
       "Create intuitive digital experiences as a UI/UX Designer. In this role, you will collaborate with product teams to design engaging user interfaces and ensure a seamless user journey. Your creativity and attention to detail will be crucial in developing designs that not only look good but also enhance functionality and user satisfaction.",
-    description: "Create intuitive digital experiences as a UI/UX Designer. In this role, you will collaborate with product teams to design engaging user interfaces and ensure a seamless user journey. Your creativity and attention to detail will be crucial in developing designs that not only look good but also enhance functionality and user satisfaction.",
-    otherDetails: {
-      keyResponsibilities: [
-        "Conduct user research and usability testing to gather insights on user needs.",
-        "Create wireframes, prototypes, and high-fidelity designs that communicate user flows.",
-        "Collaborate with development teams to implement designs effectively.",
-        "Stay updated with industry trends and best practices in UI/UX design.",
-        "Gather and analyze user feedback to iterate and improve designs.",
-      ],
-      skillsRequired: [
-        "Proficiency in design tools like Figma, Sketch, or Adobe XD.",
-        "Strong understanding of user-centered design principles.",
-        "Basic knowledge of HTML/CSS for better collaboration with developers.",
-        "Excellent communication and teamwork skills.",
-        "Creative problem-solving abilities.",
-      ],
-    },
+    keyResponsibilities: [
+      "Conduct user research and usability testing to gather insights on user needs.",
+      "Create wireframes, prototypes, and high-fidelity designs that communicate user flows.",
+      "Collaborate with development teams to implement designs effectively.",
+      "Stay updated with industry trends and best practices in UI/UX design.",
+      "Gather and analyze user feedback to iterate and improve designs.",
+    ],
+    skillsRequired: [
+      "Proficiency in design tools like Figma, Sketch, or Adobe XD.",
+      "Strong understanding of user-centered design principles.",
+      "Basic knowledge of HTML/CSS for better collaboration with developers.",
+      "Excellent communication and teamwork skills.",
+      "Creative problem-solving abilities.",
+    ],
     salary: 61000,
     date: 1729681667114,
     category: "Designing",
@@ -105,7 +96,7 @@ export const jobsData = [
   {
     _id: "4",
     title: "DevOps Engineer",
-    location: "Washington",
+    location: "Jaipur",
     level: "Senior Level",
     companyId: {
       _id: "670e4d25ca9fda8f1bf359b9",
@@ -113,24 +104,22 @@ export const jobsData = [
       email: "slack@demo.com",
       image: companyIcon,
     },
-    about:
+    description:
       "Enhance our deployment pipeline as a DevOps Engineer. This role will involve automating deployment processes, managing cloud infrastructure, and implementing best practices for security and performance. You will play a vital role in bridging the gap between development and operations, ensuring efficient workflows and high-quality releases.",
-    description: "Enhance our deployment pipeline as a DevOps Engineer. This role will involve automating deployment processes, managing cloud infrastructure, and implementing best practices for security and performance. You will play a vital role in bridging the gap between development and operations, ensuring efficient workflows and high-quality releases.",
-    otherDetails: {
-      keyResponsibilities: [
-        "Automate deployment processes using CI/CD tools to streamline development workflows.",
-        "Manage cloud infrastructure, ensuring optimal performance and scalability.",
-        "Implement security best practices to safeguard our systems.",
-        "Monitor application performance and troubleshoot issues proactively.",
-        "Collaborate with developers to improve system reliability and efficiency.",
-      ],
-      skillsRequired: [
-        "Experience with CI/CD tools (e.g., Jenkins, GitLab CI).",
-        "Strong knowledge of cloud platforms (e.g., AWS, Azure).",
-        "Proficiency in scripting languages (e.g., Bash, Python).",
-        "Familiarity with containerization technologies (e.g., Docker, Kubernetes).",
-        "Excellent troubleshooting and analytical skills.",
-      ]},
+    keyResponsibilities: [
+      "Automate deployment processes using CI/CD tools to streamline development workflows.",
+      "Manage cloud infrastructure, ensuring optimal performance and scalability.",
+      "Implement security best practices to safeguard our systems.",
+      "Monitor application performance and troubleshoot issues proactively.",
+      "Collaborate with developers to improve system reliability and efficiency.",
+    ],
+    skillsRequired: [
+      "Experience with CI/CD tools (e.g., Jenkins, GitLab CI).",
+      "Strong knowledge of cloud platforms (e.g., AWS, Azure).",
+      "Proficiency in scripting languages (e.g., Bash, Python).",
+      "Familiarity with containerization technologies (e.g., Docker, Kubernetes).",
+      "Excellent troubleshooting and analytical skills.",
+    ],
     salary: 53000,
     date: 1729681667114,
     category: "Programming",
@@ -146,24 +135,22 @@ export const jobsData = [
       email: "slack@demo.com",
       image: companyIcon,
     },
-    about:
+    description:
       "Join our team as a Software Engineer to build high-quality applications that deliver exceptional user experiences. You will be responsible for designing, developing, and maintaining software solutions that meet business needs. Collaborating closely with other engineers, you will contribute to code reviews and ensure best practices are followed throughout the development process.",
-    description: "Join our team as a Software Engineer to build high-quality applications that deliver exceptional user experiences. You will be responsible for designing, developing, and maintaining software solutions that meet business needs. Collaborating closely with other engineers, you will contribute to code reviews and ensure best practices are followed throughout the development process.",
-    otherDetails: { 
-      keyResponsibilities: [
-        "Design, develop, and maintain software applications that meet user requirements.",
-        "Collaborate with cross-functional teams to design scalable and efficient solutions.",
-        "Participate in code reviews to ensure code quality and maintainability.",
-        "Conduct testing and debugging to improve application functionality.",
-        "Document development processes and application designs.",
-      ],
-      skillsRequired: [
-        "Proficient in Java or C# with a solid understanding of object-oriented programming.",
-        "Experience with Agile methodologies and software development life cycle.",
-        "Strong problem-solving skills and attention to detail.",
-        "Familiarity with version control systems (e.g., Git).",
-        "Excellent communication and teamwork abilities.",
-      ]},
+    keyResponsibilities: [
+      "Design, develop, and maintain software applications that meet user requirements.",
+      "Collaborate with cross-functional teams to design scalable and efficient solutions.",
+      "Participate in code reviews to ensure code quality and maintainability.",
+      "Conduct testing and debugging to improve application functionality.",
+      "Document development processes and application designs.",
+    ],
+    skillsRequired: [
+      "Proficient in Java or C# with a solid understanding of object-oriented programming.",
+      "Experience with Agile methodologies and software development life cycle.",
+      "Strong problem-solving skills and attention to detail.",
+      "Familiarity with version control systems (e.g., Git).",
+      "Excellent communication and teamwork abilities.",
+    ],
     salary: 91000,
     date: 1729681667114,
     category: "Programming",
@@ -179,24 +166,22 @@ export const jobsData = [
       email: "slack@demo.com",
       image: companyIcon,
     },
-    about:
+    description:
       "We are looking for a Network Engineer to manage our infrastructure and ensure robust connectivity across all systems. Your expertise will help us design and implement network solutions that are secure and efficient. You will be pivotal in monitoring network performance and ensuring compliance with security standards.",
-    description:"We are looking for a Network Engineer to manage our infrastructure and ensure robust connectivity across all systems. Your expertise will help us design and implement network solutions that are secure and efficient. You will be pivotal in monitoring network performance and ensuring compliance with security standards.",
-    otherDetails: {
-      keyResponsibilities: [
-        "Design and implement network solutions that meet organizational needs.",
-        "Monitor network performance and troubleshoot issues to ensure uptime.",
-        "Ensure security compliance by implementing best practices.",
-        "Document network configurations and maintain updated records.",
-        "Collaborate with IT teams to enhance network capabilities.",
-      ],
-      skillsRequired: [
-        "Proficiency in network protocols and routing (e.g., TCP/IP, BGP, OSPF).",
-        "Experience with firewalls, VPNs, and security technologies.",
-        "Strong troubleshooting skills and attention to detail.",
-        "Excellent communication and teamwork abilities.",
-        "Relevant certifications (e.g., CCNA, CCNP) are a plus.",
-      ]},
+    keyResponsibilities: [
+      "Design and implement network solutions that meet organizational needs.",
+      "Monitor network performance and troubleshoot issues to ensure uptime.",
+      "Ensure security compliance by implementing best practices.",
+      "Document network configurations and maintain updated records.",
+      "Collaborate with IT teams to enhance network capabilities.",
+    ],
+    skillsRequired: [
+      "Proficiency in network protocols and routing (e.g., TCP/IP, BGP, OSPF).",
+      "Experience with firewalls, VPNs, and security technologies.",
+      "Strong troubleshooting skills and attention to detail.",
+      "Excellent communication and teamwork abilities.",
+      "Relevant certifications (e.g., CCNA, CCNP) are a plus.",
+    ],
     salary: 77000,
     date: 1729681667114,
     category: "Networking",
@@ -212,10 +197,8 @@ export const jobsData = [
       email: "slack@demo.com",
       image: companyIcon,
     },
-    about:
+    description:
       "Lead projects as a Project Manager ensuring timely delivery and alignment with organizational goals. You will oversee project planning, execution, and monitoring, collaborating with various teams to ensure that all aspects of each project are delivered successfully. Your strong leadership skills will be key to motivating team members and fostering a positive work environment.",
-    description: "Lead projects as a Project Manager ensuring timely delivery and alignment with organizational goals. You will oversee project planning, execution, and monitoring, collaborating with various teams to ensure that all aspects of each project are delivered successfully. Your strong leadership skills will be key to motivating team members and fostering a positive work environment.",
-    otherDetails: {
     keyResponsibilities: [
       "Define project scope, objectives, and deliverables in collaboration with stakeholders.",
       "Develop detailed project plans and schedules to guide execution.",
@@ -229,7 +212,7 @@ export const jobsData = [
       "Strong leadership and organizational skills.",
       "Excellent communication and interpersonal abilities.",
       "Certification in project management (e.g., PMP, Scrum Master) is preferred.",
-    ]},
+    ],
     salary: 60000,
     date: 1729681667114,
     category: "Management",
@@ -237,7 +220,7 @@ export const jobsData = [
   {
     _id: "8",
     title: "Mobile App Developer",
-    location: "Hyderabad",
+    location: "Ahemdabad",
     level: "Intermediate Level",
     companyId: {
       _id: "670e4d25ca9fda8f1bf359b9",
@@ -245,25 +228,22 @@ export const jobsData = [
       email: "slack@demo.com",
       image: companyIcon,
     },
-    about:
+    description:
       "Join our team as a Mobile App Developer to create engaging mobile applications for iOS and Android platforms. You will be responsible for the full app development lifecycle, from concept and design to deployment and maintenance. Your creativity and technical skills will help us deliver high-quality applications that enhance user experience.",
-    description: "Join our team as a Mobile App Developer to create engaging mobile applications for iOS and Android platforms. You will be responsible for the full app development lifecycle, from concept and design to deployment and maintenance. Your creativity and technical skills will help us deliver high-quality applications that enhance user experience.",
-    otherDetails: {
-      keyResponsibilities: [
-        "Design and build advanced mobile applications for iOS and Android.",
-        "Collaborate with cross-functional teams to define, design, and ship new features.",
-        "Continuously discover, evaluate, and implement new technologies to maximize development efficiency.",
-        "Ensure performance, quality, and responsiveness of applications.",
-        "Conduct code reviews and maintain code quality standards.",
-      ],
-      skillsRequired: [
-        "Proficiency in Swift for iOS or Kotlin for Android development.",
-        "Experience with RESTful APIs and third-party libraries.",
-        "Strong understanding of mobile app design principles and guidelines.",
-        "Excellent problem-solving skills and attention to detail.",
-        "Familiarity with version control systems (e.g., Git).",
-      ],
-    },
+    keyResponsibilities: [
+      "Design and build advanced mobile applications for iOS and Android.",
+      "Collaborate with cross-functional teams to define, design, and ship new features.",
+      "Continuously discover, evaluate, and implement new technologies to maximize development efficiency.",
+      "Ensure performance, quality, and responsiveness of applications.",
+      "Conduct code reviews and maintain code quality standards.",
+    ],
+    skillsRequired: [
+      "Proficiency in Swift for iOS or Kotlin for Android development.",
+      "Experience with RESTful APIs and third-party libraries.",
+      "Strong understanding of mobile app design principles and guidelines.",
+      "Excellent problem-solving skills and attention to detail.",
+      "Familiarity with version control systems (e.g., Git).",
+    ],
     salary: 112000,
     date: 1729681667114,
     category: "Programming",
@@ -279,25 +259,22 @@ export const jobsData = [
       email: "slack@demo.com",
       image: companyIcon,
     },
-    about:
+    description:
       "Design cloud solutions as a Cloud Architect, helping to transform our infrastructure and services. You will work closely with various teams to understand their requirements and translate them into secure, scalable, and efficient cloud-based solutions. Your expertise will guide our cloud strategy and ensure that we leverage cloud technologies to their fullest potential.",
-    description:"Design cloud solutions as a Cloud Architect, helping to transform our infrastructure and services. You will work closely with various teams to understand their requirements and translate them into secure, scalable, and efficient cloud-based solutions. Your expertise will guide our cloud strategy and ensure that we leverage cloud technologies to their fullest potential.",
-    otherDetails: {
-      keyResponsibilities: [
-        "Design and implement cloud solutions that align with business objectives.",
-        "Provide guidance on best practices for cloud architecture and deployment.",
-        "Collaborate with DevOps teams to enhance cloud infrastructure and security.",
-        "Monitor cloud systems for performance and cost-effectiveness.",
-        "Stay updated on emerging cloud technologies and industry trends.",
-      ],
-      skillsRequired: [
-        "Strong knowledge of cloud service providers (e.g., AWS, Azure, GCP).",
-        "Experience with cloud architecture patterns and best practices.",
-        "Familiarity with containerization and orchestration technologies (e.g., Docker, Kubernetes).",
-        "Excellent analytical and problem-solving skills.",
-        "Relevant certifications (e.g., AWS Certified Solutions Architect) are preferred.",
-      ],
-    },
+    keyResponsibilities: [
+      "Design and implement cloud solutions that align with business objectives.",
+      "Provide guidance on best practices for cloud architecture and deployment.",
+      "Collaborate with DevOps teams to enhance cloud infrastructure and security.",
+      "Monitor cloud systems for performance and cost-effectiveness.",
+      "Stay updated on emerging cloud technologies and industry trends.",
+    ],
+    skillsRequired: [
+      "Strong knowledge of cloud service providers (e.g., AWS, Azure, GCP).",
+      "Experience with cloud architecture patterns and best practices.",
+      "Familiarity with containerization and orchestration technologies (e.g., Docker, Kubernetes).",
+      "Excellent analytical and problem-solving skills.",
+      "Relevant certifications (e.g., AWS Certified Solutions Architect) are preferred.",
+    ],
     salary: 96000,
     date: 1729681667114,
     category: "Programming",
@@ -305,7 +282,7 @@ export const jobsData = [
   {
     _id: "10",
     title: "Technical Writer",
-    location: "Mumbai",
+    location: "Chennai",
     level: "Intermediate Level",
     companyId: {
       _id: "670e4d25ca9fda8f1bf359b9",
@@ -313,25 +290,22 @@ export const jobsData = [
       email: "slack@demo.com",
       image: companyIcon,
     },
-    about:
+    description:
       "Join us as a Technical Writer to create user-friendly documentation that supports our products and services. You will work closely with engineers and product managers to gather information and produce clear, concise, and accurate documentation. Your role is essential in ensuring that our users can easily understand and utilize our offerings.",
-    description: "Join us as a Technical Writer to create user-friendly documentation that supports our products and services. You will work closely with engineers and product managers to gather information and produce clear, concise, and accurate documentation. Your role is essential in ensuring that our users can easily understand and utilize our offerings.",
-    otherDetails: {
-      keyResponsibilities: [
-        "Create and maintain user manuals, API documentation, and other technical materials.",
-        "Collaborate with development teams to gather and clarify technical information.",
-        "Conduct reviews of existing documentation to ensure accuracy and relevance.",
-        "Ensure that documentation is up-to-date and consistent with product updates.",
-        "Utilize feedback from users to enhance the clarity and usability of documentation.",
-      ],
-      skillsRequired: [
-        "Proficiency in technical writing and documentation tools (e.g., MadCap Flare, Adobe FrameMaker).",
-        "Strong understanding of technology and the ability to convey complex information clearly.",
-        "Excellent research and analytical skills.",
-        "Strong communication and collaboration abilities.",
-        "Attention to detail and a commitment to quality.",
-      ],
-    },
+    keyResponsibilities: [
+      "Create and maintain user manuals, API documentation, and other technical materials.",
+      "Collaborate with development teams to gather and clarify technical information.",
+      "Conduct reviews of existing documentation to ensure accuracy and relevance.",
+      "Ensure that documentation is up-to-date and consistent with product updates.",
+      "Utilize feedback from users to enhance the clarity and usability of documentation.",
+    ],
+    skillsRequired: [
+      "Proficiency in technical writing and documentation tools (e.g., MadCap Flare, Adobe FrameMaker).",
+      "Strong understanding of technology and the ability to convey complex information clearly.",
+      "Excellent research and analytical skills.",
+      "Strong communication and collaboration abilities.",
+      "Attention to detail and a commitment to quality.",
+    ],
     salary: 72000,
     date: 1729681667114,
     category: "Marketing",
@@ -347,25 +321,22 @@ export const jobsData = [
       email: "slack@demo.com",
       image: companyIcon,
     },
-    about:
+    description:
       "Protect our systems as a Cybersecurity Analyst. In this role, you will monitor security systems, analyze potential threats, and implement protective measures to safeguard our information and assets. Your expertise will help us stay ahead of evolving security challenges and maintain a secure environment for our users and stakeholders.",
-    description:"Protect our systems as a Cybersecurity Analyst. In this role, you will monitor security systems, analyze potential threats, and implement protective measures to safeguard our information and assets. Your expertise will help us stay ahead of evolving security challenges and maintain a secure environment for our users and stakeholders.",
-    otherDetails: {
-      keyResponsibilities: [
-        "Monitor and analyze security events to identify potential threats.",
-        "Conduct risk assessments and vulnerability analyses to enhance security posture.",
-        "Implement security measures and controls to mitigate risks.",
-        "Collaborate with IT teams to respond to security incidents.",
-        "Stay informed about the latest cybersecurity trends and threats.",
-      ],
-      skillsRequired: [
-        "Strong knowledge of security protocols, standards, and tools.",
-        "Experience with SIEM tools and incident response processes.",
-        "Understanding of network protocols and security technologies.",
-        "Excellent problem-solving and analytical skills.",
-        "Relevant certifications (e.g., CISSP, CEH) are a plus.",
-      ],
-    },
+    keyResponsibilities: [
+      "Monitor and analyze security events to identify potential threats.",
+      "Conduct risk assessments and vulnerability analyses to enhance security posture.",
+      "Implement security measures and controls to mitigate risks.",
+      "Collaborate with IT teams to respond to security incidents.",
+      "Stay informed about the latest cybersecurity trends and threats.",
+    ],
+    skillsRequired: [
+      "Strong knowledge of security protocols, standards, and tools.",
+      "Experience with SIEM tools and incident response processes.",
+      "Understanding of network protocols and security technologies.",
+      "Excellent problem-solving and analytical skills.",
+      "Relevant certifications (e.g., CISSP, CEH) are a plus.",
+    ],
     salary: 62000,
     date: 1729681667114,
     category: "Cybersecurity",
@@ -381,25 +352,22 @@ export const jobsData = [
       email: "slack@demo.com",
       image: companyIcon,
     },
-    about:
+    description:
       "Join us as a Business Analyst to optimize our processes and improve overall efficiency. You will work closely with stakeholders to identify business needs and gather requirements for new projects. Your analytical skills will help drive decision-making and ensure that solutions align with business objectives.",
-    description:"Join us as a Business Analyst to optimize our processes and improve overall efficiency. You will work closely with stakeholders to identify business needs and gather requirements for new projects. Your analytical skills will help drive decision-making and ensure that solutions align with business objectives.",
-    otherDetails: {
-      keyResponsibilities: [
-        "Gather and analyze business requirements from stakeholders.",
-        "Develop detailed documentation of business processes and workflows.",
-        "Collaborate with IT and development teams to translate requirements into solutions.",
-        "Conduct testing and validation of new systems and processes.",
-        "Provide ongoing support and training for users.",
-      ],
-      skillsRequired: [
-        "Strong analytical skills and attention to detail.",
-        "Proficiency in business analysis tools (e.g., Visio, JIRA).",
-        "Excellent communication and interpersonal abilities.",
-        "Experience with data analysis and reporting.",
-        "Familiarity with Agile methodologies is a plus.",
-      ],
-    },
+    keyResponsibilities: [
+      "Gather and analyze business requirements from stakeholders.",
+      "Develop detailed documentation of business processes and workflows.",
+      "Collaborate with IT and development teams to translate requirements into solutions.",
+      "Conduct testing and validation of new systems and processes.",
+      "Provide ongoing support and training for users.",
+    ],
+    skillsRequired: [
+      "Strong analytical skills and attention to detail.",
+      "Proficiency in business analysis tools (e.g., Visio, JIRA).",
+      "Excellent communication and interpersonal abilities.",
+      "Experience with data analysis and reporting.",
+      "Familiarity with Agile methodologies is a plus.",
+    ],
     salary: 68000,
     date: 1729681667114,
     category: "Management",
@@ -407,78 +375,149 @@ export const jobsData = [
 ];
 
 export const jobsApplied = [
-    {
-        company: 'Amazon',
-        title: 'Full Stack Developer',
-        location: 'Bangalore',
-        date: '22 Aug, 2024',
-        status: 'Pending',
-        logo: companyIcon,
-    },
-    {
-        company: 'Meta',
-        title: 'Data Scientist',
-        location: 'San Francisco',
-        date: '22 Aug, 2024',
-        status: 'Rejected',
-        logo: companyIcon,
-    },
-    {
-        company: 'Google',
-        title: 'Marketing Manager',
-        location: 'London',
-        date: '25 Sep, 2024',
-        status: 'Accepted',
-        logo: companyIcon,
-    },
-    {
-        company: 'Qualcomm',
-        title: 'UI/UX Designer',
-        location: 'Dubai',
-        date: '15 Oct, 2024',
-        status: 'Pending',
-        logo: companyIcon,
-    },
-    {
-        company: 'Microsoft',
-        title: 'Full Stack Developer',
-        location: 'Hyderabad',
-        date: '25 Sep, 2024',
-        status: 'Accepted',
-        logo: companyIcon,
-    },
+  {
+    company: "Amazon",
+    title: "Full Stack Developer",
+    location: "Bangalore",
+    date: "22 Aug, 2024",
+    status: "Pending",
+    logo: companyIcon,
+  },
+  {
+    company: "Meta",
+    title: "Data Scientist",
+    location: "San Francisco",
+    date: "22 Aug, 2024",
+    status: "Rejected",
+    logo: companyIcon,
+  },
+  {
+    company: "Google",
+    title: "Marketing Manager",
+    location: "London",
+    date: "25 Sep, 2024",
+    status: "Accepted",
+    logo: companyIcon,
+  },
+  {
+    company: "Qualcomm",
+    title: "UI/UX Designer",
+    location: "Dubai",
+    date: "15 Oct, 2024",
+    status: "Pending",
+    logo: companyIcon,
+  },
+  {
+    company: "Microsoft",
+    title: "Full Stack Developer",
+    location: "Hyderabad",
+    date: "25 Sep, 2024",
+    status: "Accepted",
+    logo: companyIcon,
+  },
 ];
 export const manageJobsData = [
-    { _id: 1, title: "Full Stack Developer", date: 1729102298497, location: "Bangalore", applicants: 20 },
-    { _id: 2, title: "Data Scientist", date: 1729102298497, location: "San Francisco", applicants: 15 },
-    { _id: 3, title: "Marketing Manager", date: 1729102298497, location: "London", applicants: 2 },
-    { _id: 4, title: "UI/UX Designer", date: 1729102298497, location: "Dubai", applicants: 25 }
+  {
+    _id: 1,
+    title: "Full Stack Developer",
+    date: 1729102298497,
+    location: "Bangalore",
+    applicants: 20,
+  },
+  {
+    _id: 2,
+    title: "Data Scientist",
+    date: 1729102298497,
+    location: "San Francisco",
+    applicants: 15,
+  },
+  {
+    _id: 3,
+    title: "Marketing Manager",
+    date: 1729102298497,
+    location: "London",
+    applicants: 2,
+  },
+  {
+    _id: 4,
+    title: "UI/UX Designer",
+    date: 1729102298497,
+    location: "Dubai",
+    applicants: 25,
+  },
 ];
 
 export const JobLocations = [
-    "Bangalore",
-    "Washington",
-    "Hyderabad",
-    "Mumbai",
-    "California",
-    "Chennai",
-    "New York"
-]
+  "Bangalore",
+  "Delhi",
+  "Hyderabad",
+  "Mumbai",
+  "Gurgaon",
+  "Chennai",
+  "Pune",
+  "Noida",
+  "Kolkata",
+  "Ahemdabad",
+  "Jaipur",
+  "Chennai",
+];
 export const JobCategories = [
-    "Programming",
-    "Data Science",
-    "Designing",
-    "Networking",
-    "Management",
-    "Marketing",
-    "Cybersecurity",
-]
+  "Programming",
+  "Data Science",
+  "Designing",
+  "Networking",
+  "Management",
+  "Marketing",
+  "Cybersecurity",
+];
 export const viewApplicationsPageData = [
-    { _id: 1, name: "Richard Sanford", jobTitle: "Full Stack Developer", location: "Bangalore", imgSrc: companyIcon },
-    { _id: 2, name: "Enrique Murphy", jobTitle: "Data Scientist", location: "San Francisco", imgSrc: companyIcon },
-    { _id: 3, name: "Alison Powell", jobTitle: "Marketing Manager", location: "London", imgSrc: companyIcon },
-    { _id: 4, name: "Richard Sanford", jobTitle: "UI/UX Designer", location: "Dubai", imgSrc: companyIcon },
-    { _id: 5, name: "Enrique Murphy", jobTitle: "Full Stack Developer", location: "Hyderabad", imgSrc: companyIcon },
-    { _id: 6, name: "Alison Powell", jobTitle: "Data Scientist", location: "New Delhi", imgSrc: companyIcon },
-    { _id: 7, name: "Richard Sanford", jobTitle: "Marketing Manager", location: "Chennai", imgSrc: companyIcon },
+  {
+    _id: 1,
+    name: "Richard Sanford",
+    jobTitle: "Full Stack Developer",
+    location: "Bangalore",
+    imgSrc: companyIcon,
+  },
+  {
+    _id: 2,
+    name: "Enrique Murphy",
+    jobTitle: "Data Scientist",
+    location: "San Francisco",
+    imgSrc: companyIcon,
+  },
+  {
+    _id: 3,
+    name: "Alison Powell",
+    jobTitle: "Marketing Manager",
+    location: "London",
+    imgSrc: companyIcon,
+  },
+  {
+    _id: 4,
+    name: "Richard Sanford",
+    jobTitle: "UI/UX Designer",
+    location: "Dubai",
+    imgSrc: companyIcon,
+  },
+  {
+    _id: 5,
+    name: "Enrique Murphy",
+    jobTitle: "Full Stack Developer",
+    location: "Hyderabad",
+    imgSrc: companyIcon,
+  },
+  {
+    _id: 6,
+    name: "Alison Powell",
+    jobTitle: "Data Scientist",
+    location: "New Delhi",
+    imgSrc: companyIcon,
+  },
+  {
+    _id: 7,
+    name: "Richard Sanford",
+    jobTitle: "Marketing Manager",
+    location: "Chennai",
+    imgSrc: companyIcon,
+  },
 ];

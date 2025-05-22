@@ -88,6 +88,7 @@ function Login({ setLogin }) {
             <input
               type="file"
               accept="image/*"
+              name="image"
               hidden
               id="logo"
               className="focus:outline-none text-gray-400 placeholder:text-gray-400"
@@ -97,9 +98,9 @@ function Login({ setLogin }) {
             />
           </div>
         )}
-        {!signup && (
+        {/* {!signup && (
           <p className="my-4 text-blue-600 cursor-pointer">Forgot Password?</p>
-        )}
+        )} */}
         <div className="flex items-center justify-center">
           {!signup && (
             <button className="rounded-full bg-blue-600 text-white py-2 px-6 cursor-pointer w-full text-sm md:text-[16px]">

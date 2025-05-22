@@ -13,7 +13,7 @@ function JobCard({temp}) {
           {temp.level}
         </h1>
       </div>
-      <p className="text-xs sm:text-sm">{temp.about.substring(0,200)+" ..."}</p>
+      <p className="text-xs sm:text-sm">{temp.description.substring(0,200)+" ..."}</p>
       <div className="flex gap-2 items-center md:absolute bottom-6">
         <button onClick={()=>navigate(`/apply-job/${temp._id}`)} className="text-white bg-blue-500 px-2 md:px-4 lg:px-6 py-1 md:py-2 rounded-sm cursor-pointer hover:bg-blue-600 text-xs sm:text-sm lg:text-[16px]">
           Apply Now

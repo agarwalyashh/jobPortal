@@ -23,6 +23,7 @@ function Applications() {
           </h1>
           <input
             id="resume"
+            name="resume"
             hidden
             accept="application/pdf"
             type="file"

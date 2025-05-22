@@ -16,6 +16,17 @@ import ViewApplications from "./pages/ViewApplications";
 import ManageJobs from "./pages/ManageJobs";
 import AddJob from "./pages/AddJob";
 import { SearchProvider } from "./context/searchContext";
+import { AuthProvider } from "./context/authContext";
+
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 0,
+    },
+  },
+});
 
 function App() {
   const router = createBrowserRouter([
@@ -58,10 +69,14 @@ function App() {
   ]);
   return (
     <>
-      <SearchProvider>
-        <ToastContainer limit={2} hideProgressBar />
-        <RouterProvider router={router} />
-      </SearchProvider>
+      <QueryClientProvider client={queryClient}>
+        <AuthProvider>
+          <SearchProvider>
+            <ToastContainer limit={2} hideProgressBar />
+            <RouterProvider router={router} />
+          </SearchProvider>
+        </AuthProvider>
+      </QueryClientProvider>
     </>
   );
 }

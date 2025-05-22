@@ -5,6 +5,7 @@ const router = express.Router();
 
 router.route("/signup").post(companyController.uploadCompanyLogo,authController.signup)
 router.route("/login").post(authController.login)
+router.route("/isLoggedIn").get(authController.isLoggedIn);
 
 router.use(authController.protect)
 router.route("/").get(companyController.getCompany)
