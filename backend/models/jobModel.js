@@ -1,4 +1,6 @@
 const mongoose = require("mongoose");
+const Application = require("../models/applicantionModel")
+
 const jobSchema = new mongoose.Schema({
   company: {
     type: mongoose.Schema.Types.ObjectId,
@@ -82,6 +84,14 @@ jobSchema.pre("/^find/",function(next){
   this.find({active:true})
   next()
 })
+
+jobSchema.pre("findOneAndDelete", async function (next) {
+  const job = await this.model.findOne(this.getQuery());
+  if (job) {
+    await Application.deleteMany({ job: job._id });
+  }
+  next();
+});
 
 const Job = mongoose.model("Job", jobSchema);
 module.exports = Job;

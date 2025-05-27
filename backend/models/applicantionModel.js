@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const applicantsSchema = new mongoose.Schema(
   {
     user: {
-      type: String,
+      type: mongoose.Schema.ObjectId,
       ref: "User",
       required: true,
     },

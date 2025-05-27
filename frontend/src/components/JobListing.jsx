@@ -1,15 +1,21 @@
 import JobCard from "./JobCard";
 import Sidebar from "./Sidebar";
-import { jobsData } from "../helper";
 import Pagination from "./Pagination";
 import { useSearchParams } from "react-router-dom";
 import { useSearch } from "../context/SearchContext";
 import Loader from "./Loader";
+import { useQuery } from "@tanstack/react-query";
+import { getJobs } from "../services/apiJob";
 
 function JobListing() {
   const [searchParams] = useSearchParams();
-  let data = jobsData;
+  const { data:jobData, isLoading } = useQuery({
+    queryKey: ["jobs"],
+    queryFn: () => getJobs(),
+  });
+  let data = jobData?.data.jobs || [];
   const { searchFilter, sidebarFilter } = useSearch();
+  if (isLoading) return <Loader />;
   const { searchJob, searchLocation } = searchFilter;
   const { selectedLocations, selectedCategories } = sidebarFilter;
   if (searchLocation || selectedLocations.length > 0) {
@@ -44,7 +50,7 @@ function JobListing() {
         </p>
         <div className="flex flex-wrap gap-6 items-center">
           {data.slice(start, end).map((temp) => {
-            return <JobCard key={temp.id} temp={temp} />;
+            return <JobCard key={temp._id} temp={temp} />;
           })}
         </div>
         {data.length > 0 && <Pagination data={data} />}

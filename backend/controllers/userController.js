@@ -1,5 +1,6 @@
 const AppError = require("../utils/error");
 const Application = require("../models/applicantionModel");
+const Job = require("../models/jobModel");
 const User = require("../models/userModel");
 const multer = require("multer");
 const { v2: cloudinary } = require("cloudinary");
@@ -10,7 +11,9 @@ exports.uploadResume = upload.single("resume");
 
 exports.getAppliedJobs = async (req, res, next) => {
   try {
-    const data = await Application.find({ user: req.auth.userId })
+    const user = await User.findOne({ userID: req.auth.userId });
+    if (!user) return next(new AppError("User not found", 404));
+    const data = await Application.find({ user: user._id })
       .populate({
         path: "job",
         select: "title description salary location level category",
@@ -34,10 +37,12 @@ exports.getAppliedJobs = async (req, res, next) => {
 
 exports.createJobApplication = async (req, res, next) => {
   try {
-    const { jobId, companyId } = req.body;
+    const { jobId } = req.params;
+    const jobData = await Job.findById(jobId);
+    const userData = await User.findOne({ userID: req.auth.userId });
     const response = {
-      user: req.auth.userId,
-      company: companyId,
+      user: userData._id,
+      company: jobData.company,
       job: jobId,
     };
     const application = await Application.create(response);
@@ -73,8 +78,8 @@ exports.updateResume = async (req, res, next) => {
       return next(new AppError("Resume file is required", 400));
     }
     const resumeUpload = await cloudinary.uploader.upload(resume.path);
-    const user = await User.findByIdAndUpdate(
-      req.auth.userId,
+    const user = await User.findOneAndUpdate(
+      { userID: req.auth.userId },
       { resume: resumeUpload.secure_url },
       { new: true, runValidators: true }
     );

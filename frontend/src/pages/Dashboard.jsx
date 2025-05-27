@@ -36,10 +36,9 @@ function Dashboard() {
     <div className="min-h-screen flex flex-col w-[95%] font-outfit mx-auto my-4">
       <nav className="flex justify-between items-center">
         <img
-          onClick={() => navigate("/")}
           src={logo}
           alt="logo"
-          className="cursor-pointer md:h-12 md:w-50 sm:h-10 sm:w-40 h-8 w-32"
+          className="md:h-12 md:w-50 sm:h-10 sm:w-40 h-8 w-32"
         />
         <div className="flex items-center gap-4 text-xs sm:text-sm md:text-base">
           <div className="flex items-center gap-2 sm:text-lg text-sm lg:text-xl text-font">
@@ -49,7 +48,7 @@ function Dashboard() {
             <img
               src={company.image}
               alt="company-logo"
-              className="h-4 w-8 sm:h-6 sm:w-12 lg:h-8 lg:w-16"
+              className="h-4 w-8 sm:h-6 sm:w-12 lg:h-8"
             />
           </div>
           <button

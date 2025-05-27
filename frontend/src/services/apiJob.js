@@ -59,3 +59,33 @@ export async function updateVisibility(id) {
   }
   return await res.json();
 }
+
+export async function getJobs() {
+  const res = await fetch(
+    `${import.meta.env.VITE_API_BASE_URL}/api/v1/job`,
+    {
+      method: "GET",
+      credentials: "include",
+    }
+  );
+  if (!res.ok) {
+    const error = await res.json();
+    throw new Error(error.message || "Could not fetch jobs, Please try again.");
+  }
+  return await res.json();
+}
+
+export async function getJob(id) {
+  const res = await fetch(
+    `${import.meta.env.VITE_API_BASE_URL}/api/v1/job/${id}`,
+    {
+      method: "GET",
+      credentials: "include",
+    }
+  );
+  if (!res.ok) {
+    const error = await res.json();
+    throw new Error(error.message || "Could not fetch job, Please try again.");
+  }
+  return await res.json();
+}

@@ -61,7 +61,7 @@ function App() {
           element: <ManageJobs />,
         },
         {
-          element: <Navigate to="manage-jobs" replace />,
+          element: <Navigate to="add-job" replace />,
           index: true,
         },
       ],

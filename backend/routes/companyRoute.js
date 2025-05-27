@@ -7,6 +7,8 @@ router.route("/signup").post(companyController.uploadCompanyLogo,authController.
 router.route("/login").post(authController.login)
 router.route("/isLoggedIn").get(authController.isLoggedIn);
 
+router.route("/application/:jobId").get(companyController.getApplication);
+
 router.use(authController.protect)
 router.route("/").get(companyController.getCompany)
 router.route("/allApplicants").get(companyController.getAllApplicants);
@@ -14,5 +16,6 @@ router
   .route("/applicationStatus/:jobId")
   .patch(companyController.updateApplicationStatus);
 router.route("/logout").post(authController.logout);
+
 
 module.exports = router;

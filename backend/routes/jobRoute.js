@@ -4,7 +4,7 @@ const authController = require("../controllers/authController");
 
 const router = express.Router();
 
-router.route("/allJobs").get(jobController.getAllJobs);
+router.route("/").get(jobController.getAllJobs);
 router.route("/:jobId").get(jobController.getJob);
 router
   .route("/jobsByCompany/:companyId")
