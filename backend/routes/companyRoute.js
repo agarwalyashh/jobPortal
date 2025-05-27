@@ -13,6 +13,6 @@ router.route("/allApplicants").get(companyController.getAllApplicants);
 router
   .route("/applicationStatus/:jobId")
   .patch(companyController.updateApplicationStatus);
-
+router.route("/logout").post(authController.logout);
 
 module.exports = router;

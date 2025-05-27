@@ -5,8 +5,8 @@ import Navbar from "../components/Navbar"
 import {useAuth} from "../context/authContext"
  
  function Home() {
-  const data = useAuth();
-  console.log(data)
+  const value = useAuth();
+  console.log(value)
    return (    
      <div className="w-[95%] sm:w-[90%] mx-auto my-4 font-outfit flex flex-col min-h-screen">
        <Navbar/>

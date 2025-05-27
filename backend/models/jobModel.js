@@ -16,11 +16,11 @@ const jobSchema = new mongoose.Schema({
     trim: true,
   },
   keyResponsibilities:{
-    type:Array,
+    type:String,
     required:[true,"Please mention some responsibilities"]
   },
   skillsRequired:{
-    type:Array,
+    type:String,
     required:[true,"Skills are required"]
   },
   category: {

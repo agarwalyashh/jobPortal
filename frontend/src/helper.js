@@ -355,15 +355,15 @@ export const jobsData = [
     description:
       "Join us as a Business Analyst to optimize our processes and improve overall efficiency. You will work closely with stakeholders to identify business needs and gather requirements for new projects. Your analytical skills will help drive decision-making and ensure that solutions align with business objectives.",
     keyResponsibilities: [
-      "Gather and analyze business requirements from stakeholders.",
-      "Develop detailed documentation of business processes and workflows.",
-      "Collaborate with IT and development teams to translate requirements into solutions.",
-      "Conduct testing and validation of new systems and processes.",
-      "Provide ongoing support and training for users.",
+      "1.Gather and analyze business requirements from stakeholders.",
+      "2.Develop detailed documentation of business processes and workflows.",
+      "3.Collaborate with IT and development teams to translate requirements into solutions.",
+      "4.Conduct testing and validation of new systems and processes.",
+      "5.Provide ongoing support and training for users.",
     ],
     skillsRequired: [
-      "Strong analytical skills and attention to detail.",
-      "Proficiency in business analysis tools (e.g., Visio, JIRA).",
+      "1.Strong analytical skills and attention to detail.",
+      "2.Proficiency in business analysis tools (e.g., Visio, JIRA).",
       "Excellent communication and interpersonal abilities.",
       "Experience with data analysis and reporting.",
       "Familiarity with Agile methodologies is a plus.",
@@ -468,7 +468,7 @@ export const JobCategories = [
   "Networking",
   "Management",
   "Marketing",
-  "Cybersecurity",
+  "Cyber Security",
 ];
 export const viewApplicationsPageData = [
   {
@@ -521,3 +521,16 @@ export const viewApplicationsPageData = [
     imgSrc: companyIcon,
   },
 ];
+
+import {Slide} from "react-toastify";
+export const toastStyles = {
+    position: "top-center",
+    autoClose: 1000,
+    transition: Slide,
+    style: {
+      zIndex: 9999, 
+      width: "auto",
+      whiteSpace: "nowrap",
+      padding: "12px 20px",
+    },
+  }

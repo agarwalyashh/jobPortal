@@ -1,6 +1,7 @@
 const express = require("express");
 const morgan = require("morgan");
 const cors = require("cors");
+const cookieParser = require("cookie-parser");
 const AppError = require("./utils/error");
 const errorController = require("./controllers/errorController");
 const companyRoute = require("./routes/companyRoute")
@@ -15,6 +16,7 @@ if (process.env.NODE_ENV === "development") app.use(morgan("dev"));
 
 app.use(cors({ origin: "http://localhost:5173", credentials: true }));
 app.use(express.json());
+app.use(cookieParser());
 
 app.use((req, res, next) => {
   next();

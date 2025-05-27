@@ -6,22 +6,25 @@ import Loading from "../components/Loader";
 const UserContext = createContext();
 
 function AuthProvider({ children }) {
-  const { data,isLoading } = useQuery({
+  const { data, isLoading } = useQuery({
     queryKey: ["login"],
     queryFn: isLoggedIn,
   });
+  if (isLoading) return <Loading />;
 
-  if(isLoading)
-    return <Loading/>
+  const value = {
+    isLoggedIn: data?.isLoggedIn || false,
+    company: data?.data?.company || null,
+  };
   return (
-    <UserContext.Provider value={data}>
+    <UserContext.Provider value={value}>
       {children}
     </UserContext.Provider>
   );
 }
 
 function useAuth() {
-  const context = useContext(UserContext); 
+  const context = useContext(UserContext);
   if (!context) {
     throw new Error("useAuth must be used within an AuthProvider");
   }

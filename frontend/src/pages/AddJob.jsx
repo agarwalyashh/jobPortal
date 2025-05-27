@@ -1,13 +1,20 @@
 import { useState } from "react";
-import { JobCategories, JobLocations } from "../helper";
+import { JobCategories, JobLocations, toastStyles } from "../helper";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { addJob } from "../services/apiJob";
+import { toast } from "react-toastify";
 
+const jobLevel = ["Beginner Level", "Intermediate Level", "Senior Level"];
 function AddJob() {
   const jobCatgories = JobCategories;
   const jobLocations = JobLocations;
   const [title, setTile] = useState("");
   const [description, setDescription] = useState("");
+  const [responsibilities, setResponsibilities] = useState("");
+  const [skills, setSkills] = useState("");
   const [salary, setSalary] = useState(0);
   const [location, setLocation] = useState(jobLocations[0]);
+  const [level, setLevel] = useState(jobLevel[0]);
   const [category, setCategory] = useState(jobCatgories[0]);
   function handleSubmit(e) {
     e.preventDefault();
@@ -17,12 +24,31 @@ function AddJob() {
       salary,
       location,
       category,
+      keyResponsibilities:responsibilities,
+      skillsRequired:skills,
+      level
     };
-    console.log(job);
+    mutate(job);
   }
+  const queryClient = useQueryClient();
+  const { mutate } = useMutation({
+    mutationFn: (data) => addJob(data),
+    onSuccess: () => {
+      toast.success("Job Created", toastStyles);
+      queryClient.invalidateQueries({ queryKey: ["job"] });
+      setTile("");
+      setDescription("");
+      setResponsibilities("");
+      setSkills("");
+      setSalary(0);
+    },
+    onError: (err) => {
+      toast.error(err.message, toastStyles);
+    },
+  });
   return (
     <form
-      className="text-gray-500 p-2 sm:p-4 flex flex-col gap-4 md:gap-6 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[40%] text-sm md:text-base"
+      className="text-gray-500 p-2 sm:p-4 flex flex-col gap-4 md:gap-5 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[40%] text-sm md:text-base"
       onSubmit={handleSubmit}
     >
       <input
@@ -70,6 +96,43 @@ function AddJob() {
             ))}
           </select>
         </div>
+        <div className="flex flex-col gap-2">
+          <label htmlFor="category">Job Level</label>
+          <select
+            className="p-1 sm:p-2 border-1 rounded-sm"
+            value={level}
+            onChange={(e) => setLevel(e.target.value)}
+          >
+            {jobLevel.map((category, index) => (
+              <option key={index} value={category}>
+                {category}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+      <div className="flex flex-col gap-2">
+        <label htmlFor="res">Key Responsibilities</label>
+        <textarea
+          type="text"
+          id="res"
+          placeholder="1. Gather and analyze data"
+          className="focus:outline-none rounded-sm border-1 p-1 sm:p-2"
+          value={responsibilities}
+          onChange={(e) => setResponsibilities(e.target.value)}
+          required
+        />
+      </div>
+      <div className="flex flex-col gap-2">
+        <label htmlFor="res">Skills Required</label>
+        <textarea
+          type="text"
+          placeholder="1. Python"
+          className="focus:outline-none rounded-sm border-1 p-1 sm:p-2"
+          value={skills}
+          onChange={(e) => setSkills(e.target.value)}
+          required
+        />
       </div>
       <div className="flex flex-col gap-2">
         <label htmlFor="salary">Salary</label>

@@ -148,7 +148,7 @@ exports.isLoggedIn = async (req, res, next) => {
       });
     }
 
-    const currentRecruiter = await User.findById(decoded.id);
+    const currentRecruiter = await Company.findById(decoded.id);
     if (!currentRecruiter) {
       return res.status(200).json({
         status: "success",
@@ -166,12 +166,26 @@ exports.isLoggedIn = async (req, res, next) => {
     return res.status(200).json({
       status: "success",
       isLoggedIn: true,
-      company: currentRecruiter,
+      data: {
+        company: currentRecruiter
+      }
     });
   } catch (err) {
     return res.status(200).json({
       status: "success",
       isLoggedIn: false,
     });
+  }
+};
+
+exports.logout = async (req, res, next) => {
+  try {
+    res.cookie("jwt", "loggedOut", {
+      expires: new Date(Date.now() + 10 * 1000),
+      httpOnly: true,
+    });
+    res.status(200).json({ status: "success" });
+  } catch (err) {
+    next(new AppError(err.message, 400, err));
   }
 };

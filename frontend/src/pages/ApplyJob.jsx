@@ -7,6 +7,7 @@ import { Wallet } from "lucide-react";
 import { User } from "lucide-react";
 import { MapPin } from "lucide-react";
 import { BriefcaseBusiness } from "lucide-react";
+
 function ApplyJob() {
   const { id } = useParams();
   const [job, setJob] = useState([]);
@@ -23,7 +24,8 @@ function ApplyJob() {
     level,
     salary,
     description,
-    // otherDetails,
+    keyResponsibilities,
+    skillsRequired,
   } = job[0] || {};
   return (
     <div className="w-[95%] sm:w-[90%] mx-auto font-outfit flex flex-col min-h-screen">
@@ -77,28 +79,30 @@ function ApplyJob() {
                 {description}
               </p>
             </div>
-            {/* <div className="space-y-1 sm:space-y-2">
+            <div className="space-y-1 sm:space-y-2">
               <h1 className="text-xl font-semibold">Key Responsibility</h1>
-              <ol
+              {/* <ol
                 type="1"
                 className="list-decimal list-inside text-gray-500 text-xs sm:text-sm md:text-[16px]"
-              >
-                {otherDetails.keyResponsibilities.map((item, index) => (
-                  <li key={index}>{item}</li>
+              > */}
+              <div className=" text-gray-500 text-xs sm:text-sm md:text-[16px]">
+                {keyResponsibilities.map((item, index) => (
+                  <li key={index} className="list-none">{item}</li>
                 ))}
-              </ol>
+              </div>
             </div>
             <div className="space-y-1 sm:space-y-2">
               <h1 className="text-xl font-semibold">Skills Required</h1>
-              <ol
+              {/* <ol
                 type="1"
                 className="list-decimal list-inside text-gray-500 text-xs sm:text-sm md:text-[16px]"
-              >
-                {otherDetails.skillsRequired.map((item, index) => (
-                  <li key={index}>{item}</li>
+              > */}
+              <div className=" text-gray-500 text-xs sm:text-sm md:text-[16px]">
+                {skillsRequired.map((item, index) => (
+                  <li className="list-none" key={index}>{item}</li>
                 ))}
-              </ol>
-            </div> */}
+              </div>
+            </div>
           </div>
           <button className="hidden md:block mt-4 mb-10 lg:w-34 text-white bg-blue-500 px-2 md:px-4 lg:px-6 py-1 md:py-2 rounded-sm cursor-pointer hover:bg-blue-600 text-xs sm:text-sm lg:text-[16px]">
             Apply Now

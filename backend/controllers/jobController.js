@@ -113,17 +113,17 @@ exports.updateJob = async (req, res, next) => {
 
 exports.updateVisibility = async (req, res, next) => {
   try {
-    const { visibility } = req.body;
-    const job = await Job.findByIdAndUpdate(
-      { _id: req.params.jobId, company: req.company._id },
-      { active: visibility },
-      { new: true }
-    );
+    const job = await Job.findById(req.params.jobId);
     if (!job) return next(new AppError("Job not found by this company", 404));
     res.status(201).json({
       status: "success",
       data: job,
     });
+    const updatedJob = await Job.findByIdAndUpdate(
+      { _id: req.params.jobId, company: req.company._id },
+      { active: !job.active },
+      { new: true }
+    );
   } catch (err) {
     next(new AppError(err.message, 400, err));
   }

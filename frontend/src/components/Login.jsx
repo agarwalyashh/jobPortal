@@ -5,12 +5,57 @@ import { X } from "lucide-react";
 import { User } from "lucide-react";
 import { Upload } from "lucide-react";
 import { useState } from "react";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { toast } from "react-toastify";
+import { toastStyles } from "../helper";
+import { useNavigate } from "react-router-dom";
+import { recruiterLogin, recruiterSignup } from "../services/apiAuth";
+
 function Login({ setLogin }) {
   const [signup, setSignup] = useState(false);
-  const [name,setname] = useState("");
-  const [email,setemail] = useState("");
-  const [password,setpassword] = useState("");
-  const [logo,setlogo] = useState(null);
+  const [name, setname] = useState("");
+  const [email, setemail] = useState("");
+  const [password, setpassword] = useState("");
+  const [logo, setlogo] = useState(null);
+  const navigate = useNavigate();
+
+  const queryClient = useQueryClient();
+  function handleSignup() {
+    const dataToSend = new FormData();
+    dataToSend.append("name", name);
+    dataToSend.append("email", email);
+    dataToSend.append("password", password);
+    dataToSend.append("image", logo);
+    mutate(dataToSend);
+  }
+  function handleLogin() {
+    login({ email, password });
+  }
+  const { mutate,isPending } = useMutation({
+    mutationFn: (data) => recruiterSignup(data),
+    onSuccess: () => {
+      toast.success("Signup successful", toastStyles);
+      queryClient.invalidateQueries({ queryKey: ["login"] });
+      setSignup(false);
+      navigate("/");
+    },
+    onError: (err) => {
+      toast.error(err.message, toastStyles);
+    },
+  });
+
+  const { mutate: login,isPending:pending } = useMutation({
+    mutationFn: (data) => recruiterLogin(data),
+    onSuccess: () => {
+      toast.success("Login successful", toastStyles);
+      queryClient.invalidateQueries({ queryKey: ["login"] });
+      setLogin(false);
+      navigate("/");
+    },
+    onError: (err) => {
+      toast.error(err.message, toastStyles);
+    },
+  });
 
   function handleLogo(e) {
     const file = e.target.files[0];
@@ -77,12 +122,17 @@ function Login({ setLogin }) {
         </div>
         {signup && (
           <div className="text-sm md:text-[16px] flex gap-2 items-center rounded-full border-1 border-gray-400 px-2 md:px-4 py-2">
-            <label
-              htmlFor="logo"
-              className="cursor-pointer"
-            >
+            <label htmlFor="logo" className="cursor-pointer">
               <span className=" flex gap-2 items-center">
-                <p className="text-gray-400">Company Logo</p>{logo?<img src = {URL.createObjectURL(logo)} className="h-4 md:h-6 rounded-full w-4 md:w-6"/>:<Upload className="text-blue-600 h-4 md:h-6"/>}
+                <p className="text-gray-400">Company Logo</p>
+                {logo ? (
+                  <img
+                    src={URL.createObjectURL(logo)}
+                    className="h-4 md:h-6 rounded-full w-4 md:w-6"
+                  />
+                ) : (
+                  <Upload className="text-blue-600 h-4 md:h-6" />
+                )}
               </span>
             </label>
             <input
@@ -98,18 +148,23 @@ function Login({ setLogin }) {
             />
           </div>
         )}
-        {/* {!signup && (
-          <p className="my-4 text-blue-600 cursor-pointer">Forgot Password?</p>
-        )} */}
         <div className="flex items-center justify-center">
           {!signup && (
-            <button className="rounded-full bg-blue-600 text-white py-2 px-6 cursor-pointer w-full text-sm md:text-[16px]">
-              Login
+            <button
+              onClick={handleLogin}
+              type="submit"
+              className="rounded-full bg-blue-600 text-white py-2 px-6 cursor-pointer w-full text-sm md:text-[16px]"
+            >
+              {pending?"Please wait...": "Login"}
             </button>
           )}
           {signup && (
-            <button className="rounded-full bg-blue-600 text-white py-2 px-6 cursor-pointer w-full text-sm md:text-[16px]">
-              Create Account
+            <button
+              onClick={handleSignup}
+              type="submit"
+              className="rounded-full bg-blue-600 text-white py-2 px-6 cursor-pointer w-full text-sm md:text-[16px]"
+            >
+              {isPending?"Please wait...": "Create Account"}
             </button>
           )}
         </div>
