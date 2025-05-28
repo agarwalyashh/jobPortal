@@ -14,7 +14,7 @@ const app = express();
 
 if (process.env.NODE_ENV === "development") app.use(morgan("dev"));
 
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: "https://job-portal-five-gilt.vercel.app", credentials: true }));
 app.use(express.json());
 app.use(cookieParser());
 
