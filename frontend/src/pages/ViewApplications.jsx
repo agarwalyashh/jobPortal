@@ -39,7 +39,8 @@ function ViewApplications() {
   function handleReject(id) {
     mutate({ "id": id, "body": { status: "Rejected" } });
   }
-
+  if(applicants?.data?.data.length == 0)
+    return <h1 className="flex mx-auto justify-center items-center text-lg sm:text-xl md:text-2xl">No Applicants for this company.</h1>
   return (
     <div className="text-[8px] xs:text-xs md:text-base sm:mx-4">
       <div className="grid grid-cols-[0.25fr_0.25fr_0.25fr_0.25fr] md:grid-cols-[0.25fr_0.25fr_0.2fr_0.2fr_0.1fr] border-1 border-gray-500 rounded-sm p-2 md:p-4 items-center justify-center">

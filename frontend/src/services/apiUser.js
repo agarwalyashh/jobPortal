@@ -43,3 +43,18 @@ export async function uploadResume(data) {
   }
   return await res.json();
 }
+
+export async function getUser(){
+  const res = await fetch(
+    `${import.meta.env.VITE_API_BASE_URL}/api/v1/user`,
+    {
+      method: "GET",
+      credentials: "include",
+    }
+  );
+  if (!res.ok) {
+    const error = await res.json();
+    throw new Error(error.message || "Could not fetch user data, Please try again.");
+  }
+  return await res.json();
+}

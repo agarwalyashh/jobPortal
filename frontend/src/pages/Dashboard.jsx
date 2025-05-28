@@ -1,6 +1,7 @@
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import Footer from "../components/Footer";
+import Error from "../components/Error";
 import { UserRoundCheck } from "lucide-react";
 import { FilePlus } from "lucide-react";
 import { House } from "lucide-react";
@@ -31,7 +32,7 @@ function Dashboard() {
     logout();
   }
   if(!company)
-    return <></>
+    return <Error/>
   return (
     <div className="min-h-screen flex flex-col w-[95%] font-outfit mx-auto my-4">
       <nav className="flex justify-between items-center">

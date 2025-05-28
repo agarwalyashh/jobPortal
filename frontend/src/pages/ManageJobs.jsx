@@ -51,6 +51,8 @@ function ManageJobs() {
     toast.error("Could not fetch jobs", toastStyles);
     navigate("/dashboard");
   }
+  if(data?.data?.jobs.length == 0)
+    return <h1 className="flex mx-auto justify-center items-center text-lg sm:text-xl md:text-2xl">No Jobs have been added.</h1>
   return (
     <div className="text-[8px] xs:text-xs md:text-base sm:mx-4">
       <div className="grid grid-cols-[0.25fr_0.25fr_0.2fr_0.15fr_0.15fr] border-1 border-gray-500 rounded-sm p-2 md:p-4 items-center justify-center">

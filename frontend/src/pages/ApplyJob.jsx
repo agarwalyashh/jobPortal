@@ -8,21 +8,33 @@ import { BriefcaseBusiness } from "lucide-react";
 import { getJob } from "../services/apiJob";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import Loader from "../components/Loader";
-import { applyJob } from "../services/apiUser";
+import { applyJob, getUser } from "../services/apiUser";
 import { toast } from "react-toastify";
 import { toastStyles } from "../helper";
 import { getApplication } from "../services/apiCompany";
 import { useUser } from "@clerk/clerk-react";
 
 function ApplyJob() {
+  const { user } = useUser();
   const { id } = useParams();
   const { data, isLoading } = useQuery({
+    queryKey: ["job"],
     queryFn: () => getJob(id),
   });
+
+  const { data: userData } = useQuery({
+    queryKey: ["user"],
+    queryFn: () => getUser(),
+  });
   function apply() {
+    if(!userData.data.user.resume)
+    {
+      toast.error("Please upload resume from applied jobs section first",toastStyles);
+      return;
+    }
     mutate(id);
   }
-  const { user } = useUser();
+
   const queryClient = useQueryClient();
 
   const { mutate } = useMutation({
@@ -104,7 +116,7 @@ function ApplyJob() {
                   disabled={users.userID === user.id}
                   className="disabled:cursor-not-allowed text-white bg-blue-500 px-2 md:px-4 lg:px-6 py-1 md:py-2 rounded-sm cursor-pointer hover:bg-blue-600 text-xs sm:text-sm lg:text-[16px]"
                 >
-                  {users.userID === user.id? "Applied" : "Apply Now"}
+                  {users.userID === user.id ? "Applied" : "Apply Now"}
                 </button>
               </div>
             </div>
