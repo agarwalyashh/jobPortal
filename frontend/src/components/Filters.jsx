@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import { useSearch } from "../context/SearchContext";
+import { useSearch } from "../context/searchContext";
 function Filters() {
   const categories = [
     "Programming",

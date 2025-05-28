@@ -1,6 +1,6 @@
 import { createContext, useContext, useState } from "react";
 
-const SearchContext = createContext();
+const searchContext = createContext();
 function SearchProvider({ children }) {
   const [searchFilter, setSearchFilter] = useState({
     searchJob: "",
@@ -12,16 +12,16 @@ function SearchProvider({ children }) {
   });
   const [isSearched, setIsSearched] = useState(false);
   return (
-    <SearchContext.Provider
+    <searchContext.Provider
       value={{ searchFilter, setSearchFilter, isSearched, setIsSearched,sidebarFilter,setSidebarFilter }}
     >
       {children}
-    </SearchContext.Provider>
+    </searchContext.Provider>
   );
 }
 
 function useSearch() {
-  const context = useContext(SearchContext);
+  const context = useContext(searchContext);
   if (!context) {
     throw new Error("useSearch must be used within an SearchProvider");
   }

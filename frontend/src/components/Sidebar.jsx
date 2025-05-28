@@ -1,4 +1,4 @@
-import { useSearch } from "../context/SearchContext";
+import { useSearch } from "../context/searchContext";
 import { X } from "lucide-react";
 import Filters from "./Filters";
 import { useState } from "react";

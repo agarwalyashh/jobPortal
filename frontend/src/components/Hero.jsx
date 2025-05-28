@@ -5,7 +5,7 @@ import accenture from "../assets/accenture_logo.png";
 import adobe from "../assets/adobe_logo.png";
 import microsoft from "../assets/microsoft_logo.svg";
 import walmart from "../assets/walmart_logo.svg";
-import { useSearch } from "../context/SearchContext";
+import { useSearch } from "../context/searchContext";
 import { useState } from "react";
 
 function Hero() {
