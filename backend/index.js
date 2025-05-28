@@ -21,6 +21,9 @@ app.use(cookieParser());
 app.use((req, res, next) => {
   next();
 });
+app.get('/', (req, res) => {
+  res.send('API is running');
+});
 
 app.post(
   "/webhooks",
