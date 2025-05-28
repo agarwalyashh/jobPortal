@@ -2,7 +2,7 @@ import JobCard from "./JobCard";
 import Sidebar from "./Sidebar";
 import Pagination from "./Pagination";
 import { useSearchParams } from "react-router-dom";
-import { useSearch } from "../context/SearchContext";
+import { useSearch } from "../context/searchContext";
 import Loader from "./Loader";
 import { useQuery } from "@tanstack/react-query";
 import { getJobs } from "../services/apiJob";
