@@ -12,11 +12,13 @@ exports.getAllApplicants = async (req, res, next) => {
   try {
     const applicants = await Application.find({
       company: req.company._id,
-    }).populate({
-      path: "user",
-    }).populate({
-      path:"job"
     })
+      .populate({
+        path: "user",
+      })
+      .populate({
+        path: "job",
+      });
     res.status(200).json({
       status: "success",
       data: {
@@ -67,8 +69,14 @@ exports.getApplication = async (req, res, next) => {
         path: "company",
       })
       .populate({ path: "user" });
-    if (!application)
-      return next(new AppError("No application found for this job", 404));
+    if (!application) {
+      return res.status(200).json({
+        status: "success",
+        data: {
+          user: [],
+        },
+      });
+    }
     res.status(200).json({
       status: "success",
       data: application,

@@ -58,7 +58,7 @@ exports.createJobApplication = async (req, res, next) => {
 exports.getUser = async (req, res, next) => {
   const userId = req.auth.userId;
   try {
-    const user = await User.findById(userId);
+    const user = await User.findOne({userID:userId});
     if (!user) return next(new AppError("User not found", 404));
     res.status(200).json({
       status: "success",
